@@ -1,8 +1,8 @@
 ---
 id: 1
 trl: medium
-category: Category2
-title: Title of module 2
+category: Good Practices
+title: Good Practices in Research Software Engineering
 author: eScience Center
 thumbnail: "nlesc-dummy.png"
 visibility: visible
