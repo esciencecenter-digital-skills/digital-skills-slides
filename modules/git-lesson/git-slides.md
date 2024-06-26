@@ -4,7 +4,7 @@ type: slides
 order: 1
 ---
 
-<!-- .slide: data-state="blue_overlay yellow_flag yellow_strip purple_half_circle_bottom purple_blob right_e_top" data-background-video="./media/Mood video Homepage 2.mp4" data-background-video-loop data-background-video-muted="true" -->
+<!-- .slide: data-state="title" data-background-video="./media/Mood_video_Homepage_2.mp4" data-background-video-loop data-background-video-muted="true" -->
 
 # Automated Version Control
 
@@ -17,7 +17,7 @@ Note:
 
 ===
 
-<!-- .slide: data-state="black_overlay logo yellow_flag" data-background="./media/book-wall-g2e1ec5a05_1920.jpg" -->
+<!-- .slide: data-state="standard" -->
 <img style="height: 70vh;" src="https://swcarpentry.github.io/git-novice/fig/phd101212s.png"/>
 
 <span style="font-size: small;">“Piled Higher and Deeper” by Jorge Cham, http://www.phdcomics.com </span>
