@@ -1,11 +1,9 @@
 ---
 id: 0
-trl: medium
-category: Category1
-title: Title of module 1
+category: Good Practices
+title: Git lesson
 author: eScience Center
 thumbnail: "nlesc-dummy.png"
 visibility: visible
 ---
 
-# Category 1

@@ -1,5 +1,5 @@
 ---
-title: Learning objectives
+title: Info
 type: info
 order: 0
 ---
