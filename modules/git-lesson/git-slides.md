@@ -4,7 +4,7 @@ type: slides
 order: 1
 ---
 
-<!-- .slide: data-state="title" data-background-video="./media/Mood_video_Homepage_2.mp4" data-background-video-loop data-background-video-muted="true" -->
+<!-- .slide: data-state="title" -->
 
 # Automated Version Control
 
@@ -24,7 +24,7 @@ Note:
 
 ===
 
-<!-- .slide: data-state="black_overlay logo yellow_flag" data-background="./media/book-wall-g2e1ec5a05_1920.jpg" -->
+<!-- .slide: data-state="standard" -->
 ## Documents are...
 <div class="fragment">
   a series of changes
@@ -33,7 +33,7 @@ Note:
 
 ===
 
-<!-- .slide: data-state="black_overlay logo yellow_flag" data-background="./media/book-wall-g2e1ec5a05_1920.jpg" -->
+<!-- .slide: data-state="standard" -->
 ## Collaboration
 <div style="float: left; width: 49%;">
   independent changes
@@ -46,7 +46,7 @@ Note:
 
 ===
 
-<!-- .slide: data-state="black_overlay logo yellow_flag" data-background="./media/book-wall-g2e1ec5a05_1920.jpg" -->
+<!-- .slide: data-state="standard" -->
 ## Version Control: Key Points
 
 - Version control is track changes on steroids.
@@ -55,7 +55,7 @@ Note:
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/footprint-g55586a507_1920.jpg" -->
+<!-- .slide: data-state="standard" -->
 ## The Holy Realms of Git
 
 <img src="https://swcarpentry.github.io/git-novice/fig/git-staging-area.svg">
@@ -80,7 +80,7 @@ Note:
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/footprint-g55586a507_1920.jpg" -->
+<!-- .slide: data-state="standard" -->
 ## Crowded Staging Area / Index
 
 <img src="https://swcarpentry.github.io/git-novice/fig/git-committing.svg">
@@ -89,7 +89,7 @@ The Staging Area / Index can hold many files and folders.
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/footprint-g55586a507_1920.jpg" -->
+<!-- .slide: data-state="standard" -->
 ## Quiz 1/2
 
 <blockquote style="text-align: left;">
@@ -110,7 +110,7 @@ So yeah, the last one is good! <span style="font-style: normal;">🐺</span>
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/footprint-g55586a507_1920.jpg" -->
+<!-- .slide: data-state="standard" -->
 ## Quiz 2/2
 
 <blockquote style="text-align: left;">
@@ -149,7 +149,7 @@ Which command saves <b>myfile.txt</b> to my Git repo?<br>
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/footprint-g55586a507_1920.jpg" -->
+<!-- .slide: data-state="standard" -->
 ## Tracking Changes: Key Points
 
 - Files can be stored in

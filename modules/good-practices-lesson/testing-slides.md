@@ -6,8 +6,7 @@ author: Ole Mussmann
 description: Getting more professional
 ---
 
-<!-- .slide: data-state="title" data-background-video="./media/testing/606762245.mp4" data-background-video-loop data-background-video-muted="true" -->
-<!-- https://pixabay.com/videos/engine-motor-mechanic-technology-5497/ -->
+<!-- .slide: data-state="title" -->
 
 # Testing
 
@@ -15,7 +14,7 @@ note:
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/testing/whitebg.png" -->
+<!-- .slide: data-state="standard" -->
 
 ## Why Test?
 
@@ -41,7 +40,7 @@ note:
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/testing/whitebg.png" -->
+<!-- .slide: data-state="standard" -->
 
 ## Test Types
 
@@ -65,7 +64,7 @@ note:
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/testing/whitebg.png" -->
+<!-- .slide: data-state="standard" -->
 
 
 ## How much testing is enough?
@@ -80,7 +79,7 @@ Targets are defined as *necessary*, but *not sufficient* goals.
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/testing/whitebg.png" -->
+<!-- .slide: data-state="standard" -->
 
 # PyTest
 
@@ -91,7 +90,7 @@ Targets are defined as *necessary*, but *not sufficient* goals.
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/testing/whitebg.png" -->
+<!-- .slide: data-state="standard" -->
 
 ## Write Code
 
@@ -129,7 +128,7 @@ AssertionError
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/testing/whitebg.png" -->
+<!-- .slide: data-state="standard" -->
 
 ## Test!
 
@@ -147,7 +146,7 @@ example.py .                                                  [100%]
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/testing/whitebg.png" -->
+<!-- .slide: data-state="standard" -->
 
 ## Breaking Things
 
@@ -163,7 +162,7 @@ def test_add():
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/testing/whitebg.png" -->
+<!-- .slide: data-state="standard" -->
 
 ## Testing Again
 
@@ -197,7 +196,7 @@ FAILED example.py::test_add - assert -1 == 5
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/testing/whitebg.png" -->
+<!-- .slide: data-state="standard" -->
 
 ## Take-away
 
@@ -221,7 +220,7 @@ def test_paint_cows():
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/testing/whitebg.png" -->
+<!-- .slide: data-state="standard" -->
 
 # Recap: pure functions
 
@@ -257,7 +256,7 @@ print(3)
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/testing/whitebg.png" -->
+<!-- .slide: data-state="standard" -->
 
 ## Take-away
 
@@ -271,7 +270,7 @@ print(3)
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/testing/whitebg.png" -->
+<!-- .slide: data-state="standard" -->
 
 # Test-Driven Development: FizzBuzz Function
 
@@ -296,7 +295,7 @@ print(3)
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/testing/whitebg.png" -->
+<!-- .slide: data-state="standard" -->
 
 ## FizzBuzz Function
 
@@ -316,7 +315,7 @@ print(3)
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/testing/whitebg.png" -->
+<!-- .slide: data-state="standard" -->
 
 ## Take-away
 

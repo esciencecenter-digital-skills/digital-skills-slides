@@ -15,7 +15,7 @@ note:
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/modular-code/whitebg.png"  -->
+<!-- .slide: data-state="standard"  -->
 
 ## What is modularity?
 
@@ -27,7 +27,7 @@ note:
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/modular-code/whitebg.png" -->
+<!-- .slide: data-state="standard" -->
 
 ## Modular code
 
@@ -35,7 +35,7 @@ note:
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/modular-code/whitebg.png" -->
+<!-- .slide: data-state="standard" -->
 
 ## What are these blocks/elements?
 
@@ -47,7 +47,7 @@ note:
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/modular-code/whitebg.png"  -->
+<!-- .slide: data-state="standard"  -->
 
 ## Why write modular code?
 
@@ -60,7 +60,7 @@ To increase robustness:
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/modular-code/whitebg.png"  -->
+<!-- .slide: data-state="standard"  -->
 
 ## Why write modular code?
 
@@ -73,7 +73,7 @@ To make maintenance easier:
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/modular-code/whitebg.png"  -->
+<!-- .slide: data-state="standard"  -->
 
 ## Why write modular code?
 
@@ -86,7 +86,7 @@ To allow reusability:
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/modular-code/whitebg.png"  -->
+<!-- .slide: data-state="standard"  -->
 
 ## Why write modular code?
 
@@ -104,7 +104,7 @@ To facilitate scalability:
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/modular-code/whitebg.png"  -->
+<!-- .slide: data-state="standard"  -->
 
 ## Why write modular code?
 
@@ -117,12 +117,12 @@ To create opportunities for innovation:
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/modular-code/whitebg.png"  -->
+<!-- .slide: data-state="standard"  -->
 
 <img width="800" alt="development speed" src="./media/modular-code/development-speed.svg">
 
 
-<!-- .slide: data-state="standard" data-background="./media/modular-code/whitebg.png"  -->
+<!-- .slide: data-state="standard"  -->
 
 ## A good module...
 
@@ -134,7 +134,7 @@ To create opportunities for innovation:
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/modular-code/whitebg.png"  -->
+<!-- .slide: data-state="standard"  -->
 
 ## Readability =/= shorter code
 
@@ -156,7 +156,7 @@ indexAAG = getIndex(myList,'AAG')
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/modular-code/whitebg.png"  -->
+<!-- .slide: data-state="standard"  -->
 
 ## A good module...
 
@@ -167,7 +167,7 @@ indexAAG = getIndex(myList,'AAG')
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/modular-code/whitebg.png"  -->
+<!-- .slide: data-state="standard"  -->
 
 ## A pure function
 
@@ -185,7 +185,7 @@ def fahrenheit_to_celsius(temp_f):
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/modular-code/whitebg.png"  -->
+<!-- .slide: data-state="standard"  -->
 
 ## A stateful function
 
@@ -208,13 +208,13 @@ def fahrenheit_to_celsius(temp_f):
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/modular-code/whitebg.png"  -->
+<!-- .slide: data-state="standard"  -->
 
 ## Identifying opportunities for modularization
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/modular-code/whitebg.png"  -->
+<!-- .slide: data-state="standard"  -->
 
 ## Focus on readability
 
@@ -225,7 +225,7 @@ def fahrenheit_to_celsius(temp_f):
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/modular-code/whitebg.png"  -->
+<!-- .slide: data-state="standard"  -->
 
 ## Identify future functions
 
@@ -235,7 +235,7 @@ def fahrenheit_to_celsius(temp_f):
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/modular-code/whitebg.png"  -->
+<!-- .slide: data-state="standard"  -->
 
 ## Target nested code
 
@@ -257,7 +257,7 @@ def checkTemperature(degrees):
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/modular-code/whitebg.png"  -->
+<!-- .slide: data-state="standard"  -->
 
 ## Reduce nestedness
 
@@ -283,7 +283,7 @@ def checkTemperature(degrees):
 
 ===
 
-<!-- .slide: data-state="standard" data-background="./media/modular-code/whitebg.png"  -->
+<!-- .slide: data-state="standard"  -->
 
 ## Let tests help you
 
