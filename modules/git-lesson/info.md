@@ -4,7 +4,6 @@ type: info
 order: 0
 ---
 
-
 ## Collaborative version control with Git and GitHub
 This workshop introduces version control with Git and teaches you how to collaborate using Git and GitHub.
 
