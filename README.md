@@ -13,7 +13,7 @@ More detailed information about local setup can be found in the [NEBULA local re
 To use NEBULA to build the content in this repository locally, you will need to clone this repository and the NEBULA repository:
 
 ```bash
-git clone git@github.com:{GITHUB_ORGANIZATION}/{GITHUB_REPOSITORY_NAME}.git
+git clone git@github.com:esciencecenter-digital-skills/digital-skills-slides.git
 git clone git@github.com:esciencecenter-digital-skills/NEBULA.git
 ```
 
@@ -43,4 +43,4 @@ Start the development server on `http://localhost:3000`:
 npm run dev
 ```
 
-Now you can open a browser and navigate to `http://localhost:3000/{YOUR_BASE_URL}`
+Now you can open a browser and navigate to `http://localhost:3000/digital-skills-slides`
