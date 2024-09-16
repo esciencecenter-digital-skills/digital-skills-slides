@@ -22,8 +22,10 @@ git clone git@github.com:esciencecenter-digital-skills/NEBULA.git
 To make sure that NEBULA knows where to find the content, we create the following environment variable:
 
 ```bash
-export CONTENT_PATH="~/path/to/your/content/repository"
+export CONTENT_PATH="path/to/your/content/repository"
 ```
+
+NOTE: You cannot use a ~ in your path, you have to provide the absolute path as returned with `pwd`.
 
 ### Install dependencies
 First move into the NEBULA folder (so not the content folder):
