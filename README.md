@@ -26,6 +26,10 @@ export CONTENT_PATH="~/path/to/your/content/repository"
 ```
 
 ### Install dependencies
+First move into the NEBULA folder (so not the content folder):
+```bash
+cd NEBULA
+```
 
 Install the dependencies using the [node package manager](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm):
 
