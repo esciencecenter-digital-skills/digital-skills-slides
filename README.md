@@ -1,5 +1,5 @@
 # Digital Skills Slides
-This repository holds the slide desks for lessons in the digital skills curriculum of the Netherlands eScience Center. It is built using the [NEBULA framework](https://github.com/esciencecenter-digital-skills/NEBULA).
+This repository holds the slide decks for lessons in the digital skills curriculum of the Netherlands eScience Center. It is built using the [NEBULA framework](https://github.com/esciencecenter-digital-skills/NEBULA).
 
 For elaborate setup instructions and other documentation, see the [NEBULA documentation](https://github.com/esciencecenter-digital-skills/NEBULA-docs)
 
