@@ -3,27 +3,32 @@ title: Modular Code
 type: slides
 order: 2
 author: Barbara Vreede, Ole Mussmann
-description: Day 3 Code Refinery
+description: Modular coding
 ---
 
 <!-- .slide: data-state="title" -->
 
 # Developing Modular Code
 
-note: 
-
+<!-- .slide: data-state="standard"  -->
 
 ===
 
-<!-- .slide: data-state="standard"  -->
-
 ## What is modularity?
 
-- Software is 'built up' from smaller elements
-- Elements are self-contained and independent
-- Each element handles a specific (set of) task(s)
+Simple components combined to produce complex behavior.
 
-**Simple components** build **complex behavior**.
+- Software can be 'built up' from smaller elements.
+<!-- .element: class="fragment" data-fragment-index="3" -->
+- Elements are self-contained and independent.
+<!-- .element: class="fragment" data-fragment-index="4" -->
+- Each element handles a specific (set of) task(s).
+<!-- .element: class="fragment" data-fragment-index="5" -->
+
+<figure style="text-align: center; margin-top: 20px;">
+    <img height="300" alt="modularity" src="./media/modular-code/modern_times.jpg" style="margin-bottom: -10px;">
+        <figcaption style="font-size: 0.3em; color: #666;">Charlie Chaplin in <i>Modern Times</i> (1936).<br>© Roy Export Company Establishment; photograph, the Museum of Modern Art/Film Stills Archive, New York City</figcaption>
+</figure>
 
 ===
 
@@ -31,7 +36,10 @@ note:
 
 ## Modular code
 
-<img width="900" alt="think in building blocks" src="https://user-images.githubusercontent.com/5747405/207459058-59c88b4c-1401-428f-b28a-0ac3e72bd964.png">
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+  <img width="400" alt="cohesive" src="./media/modular-code/small_cohesive_units.png" style="margin-right: 20px;">
+  <img width="400" alt="bohemoth" src="./media/modular-code/customized_bohemoth.png" class="fragment" data-fragment-index="1">
+</div>
 
 ===
 
@@ -39,11 +47,19 @@ note:
 
 ## What are these blocks/elements?
 
-- functions
-- classes
-- modules
-- libraries/packages
-- programs
+<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px;">
+    <img src="./media/modular-code/building_blocks.png" alt="building blocks" height="200" style="margin-right: 20px;">
+    <div>
+        <ul>
+            <li class="fragment" data-fragment-index="1">functions</li>
+            <li class="fragment" data-fragment-index="2">classes</li>
+            <li class="fragment" data-fragment-index="3">modules</li>
+            <li class="fragment" data-fragment-index="4">libraries/packages</li>
+            <li class="fragment" data-fragment-index="5">programs</li>
+            <li class="fragment" data-fragment-index="5">...</li>
+        </ul>
+    </div>
+</div>
 
 ===
 
@@ -51,7 +67,7 @@ note:
 
 ## Why write modular code?
 
-To increase robustness:
+To increase robustness
 
 <img width="200" alt="testing a single module" src="./media/modular-code/testing_module.png">
 
@@ -70,6 +86,7 @@ To make maintenance easier:
 
 - Modular code is more readable and understandable.
 - Modules can be debugged separately.
+- Modules only need to be improved/optimized once.
 
 ===
 
@@ -81,8 +98,8 @@ To allow reusability:
 
 <img width="400" alt="reuse a module in another project" src="./media/modular-code/reuse_module.png">
 
-- A module can live independent of its original context
-- It can be reused by another project
+- A module can live independent of its original context.
+- It can be reused by another project.
 
 ===
 
@@ -97,8 +114,8 @@ To facilitate scalability:
 
 <div>
 
-- Complexity remains low by design
-- This creates space for scaling up
+- Complexity remains low by design.
+- This creates space for scaling up.
 
 </div>
 
@@ -112,46 +129,154 @@ To create opportunities for innovation:
 
 <img height="300" alt="tetris shows innovation" src="./media/modular-code/tetris_innovation.png">
 
-- Modules increase the capabilities and power of a project
-- Rearrange old modules for new applications
+- Modules increase the capabilities and power of a project.
+- Rearrange old modules for new applications.
+
+===
+
+<!-- .slide: data-state="standard" -->
+## Why write modular code?
+
+To save time:
+
+<img width="600" alt="development speed" src="./media/modular-code/development-speed.svg">
+
+===
+
+<!-- .slide: data-state="standard" -->
+
+## A good module...
+
+<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px;">
+    <img src="./media/modular-code/units.png" alt="units" width="200" style="margin-right: 20px;">
+    <div>
+        <ul>
+            <li class="fragment" data-fragment-index="1">performs limited and clearly defined tasks</li>
+            <li class="fragment" data-fragment-index="2">has a good name</li>
+        </ul>
+    </div>
+</div>
+
+===
+
+<!-- .slide: data-state="standard"-->
+
+## Naming your module
+
+- be descriptive and clear
+- focus on human intelligibility
+- follow language specific conventions
+- avoid abbreviations
+
+<img height="450" alt="naming" src="./media/modular-code/naming_stuff.jpg">
+<!-- .element: class="fragment" data-fragment-index="2" -->
 
 ===
 
 <!-- .slide: data-state="standard"  -->
 
-<img width="800" alt="development speed" src="./media/modular-code/development-speed.svg">
+## A good module...
 
+<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px;">
+    <img src="./media/modular-code/units.png" alt="units" width="200" style="margin-right: 20px;">
+    <div>
+        <ul>
+            <li>performs limited and clearly defined tasks</li>
+            <li>has a good name</li>
+            <li class="fragment" data-fragment-index="1">is readable</li>
+        </ul>
+    </div>
+</div>
+
+===
+
+<!-- .slide: data-state="standard"  -->
+
+## More readable != shorter code
+
+Shorter:
+```python
+indexATG = [n for n,i in enumerate(myList) if i == 'ATG']
+indexAAG = [n for n,i in enumerate(myList) if i == 'AAG']
+```
+
+More modular:
+<!-- .element: class="fragment" data-fragment-index="2" -->
+```python
+def getIndex(inputList,z):
+    zIndex = [n for n,i in enumerate(inputList) if i == z]
+    return zIndex
+
+indexATG = getIndex(myList,'ATG')
+indexAAG = getIndex(myList,'AAG')
+```
+<!-- .element: class="fragment" data-fragment-index="2" -->
+
+===
 
 <!-- .slide: data-state="standard"  -->
 
 ## A good module...
 
-- performs limited and clearly defined tasks
-- has a good name
+<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px;">
+    <img src="./media/modular-code/units.png" alt="units" width="200" style="margin-right: 20px;">
+    <div>
+        <ul>
+            <li>performs limited and clearly defined tasks</li>
+            <li>has a good name</li>
+            <li>is readable</li>
+            <li class="fragment" data-fragment-index="1">is pure and predictable</li>
+        </ul>
+    </div>
+</div>
+
+===
+
+<!-- .slide: data-state="standard"  -->
+
+## An impure function...
+
+... does not always give the same result:
+
+```python
+def fahrenheit_to_celsius(temp_list, converted_temps=[]):
+    for temp in temp_list:
+        temp_c = (temp - 32.0) * (5.0/9.0)
+        converted_temps.append(temp_c)
+
+    return converted_temps
+
+>>> fahrenheit_to_celsius([32.0, 77.0])  # [0.0, 25.0]
+```
+
+**Q: What will happen when we call the function a second time?**
 <!-- .element: class="fragment" data-fragment-index="2" -->
-- is readable
+
+```python
+>>> fahrenheit_to_celsius([32.0, 77.0])  # [0.0, 25.0, 0.0, 25.0]
+```
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
 ===
 
 <!-- .slide: data-state="standard"  -->
 
-## Readability =/= shorter code
+## A pure function...
 
-Shorter:
-```python=
-indexATG = [n for n,i in enumerate(myList) if i == 'ATG']
-indexAAG = [n for n,i in enumerate(myList) if i == 'AAG']
-```
+... always gives the same result:
 
-More modular:
-```python=
-def getIndex(inputList,z):
-    zIndex = [n for n,i in enumerate(li) if i == z]
-    return zIndex
+```python
+def fahrenheit_to_celsius(temp_list, converted_temps=None):
+    if converted_temps == None:
+        converted_temps = []
+    for temp in temp_list:
+        temp_c = (temp - 32.0) * (5.0/9.0)
+        converted_temps.append(temp_c)
 
-indexATG = getIndex(myList,'ATG')
-indexAAG = getIndex(myList,'AAG')
+    return converted_temps
+
+>>> fahrenheit_to_celsius([32.0, 77.0])  # [0.0, 25.0]
+>>> fahrenheit_to_celsius([32.0, 77.0])  # [0.0, 25.0]
 ```
 
 ===
@@ -160,51 +285,17 @@ indexAAG = getIndex(myList,'AAG')
 
 ## A good module...
 
-- performs limited and clearly defined tasks
-- has a good name
-- is readable
-- is pure/does not have a 'state'
-
-===
-
-<!-- .slide: data-state="standard"  -->
-
-## A pure function
-
-has no side-effects:
-
-```python=
-def fahrenheit_to_celsius(temp_f):
-    temp_c = (temp_f - 32.0) * (5.0/9.0)
-    return temp_c
-
->>> temp_c = fahrenheit_to_celsius(temp_f=77.0)
->>> print(temp_c)
-25.0
-```
-
-===
-
-<!-- .slide: data-state="standard"  -->
-
-## A stateful function
-
-changes its environment:
-
-```python=
-def fahrenheit_to_celsius(temp_f):
-    global temp_c
-    temp_c = (temp_f - f_to_c_offset) * f_to_c_factor
-
->>> f_to_c_offset = 32.0
->>> f_to_c_factor = (5.0/9.0)
->>> temp_c = 0.0
->>> print(temp_c)
-0.0
->>> fahrenheit_to_celsius(temp_f=77.0)
->>> print(temp_c)
-25.0
-```
+<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px;">
+    <img src="./media/modular-code/units.png" alt="units" width="200" style="margin-right: 20px;">
+    <div>
+        <ul>
+            <li>performs limited and clearly defined tasks</li>
+            <li>has a good name</li>
+            <li>is readable</li>
+            <li>is pure and predictable</li>
+        </ul>
+    </div>
+</div>
 
 ===
 
@@ -212,26 +303,80 @@ def fahrenheit_to_celsius(temp_f):
 
 ## Identifying opportunities for modularization
 
+<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px;">
+    <img src="./media/modular-code/testing_module.png" alt="testing a single module" width="200" style="margin-right: 20px;">
+    <div>
+        <ul>
+            <li class="fragment" data-fragment-index="2">poor readability</li>
+        </ul>
+    </div>
+</div>
+
 ===
 
 <!-- .slide: data-state="standard"  -->
 
-## Focus on readability
+## Readable code
 
-- Modular code becomes more readable
+Modular code becomes more readable
+
 - Code is read more than it is written
+<!-- .element: class="fragment" data-fragment-index="2" -->
 - Does a reader understand what the code does?
+<!-- .element: class="fragment" data-fragment-index="3" -->
 - Bad readability can be a "code smell"
+<!-- .element: class="fragment" data-fragment-index="4" -->
+
+<figure style="text-align: center; margin-top: 20px;">
+    <img width="400" alt="smelly" src="./media/modular-code/Smelly-Code-Featured.avif" style="margin-bottom: -10px;">
+        <figcaption style="font-size: 0.3em; color: #666;">SIphotography/Depositphotos</figcaption>
+</figure>
+<!-- .element: class="fragment" data-fragment-index="4" -->
 
 ===
 
 <!-- .slide: data-state="standard"  -->
 
-## Identify future functions
+## Identifying opportunities for modularization
+
+<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px;">
+    <img src="./media/modular-code/testing_module.png" alt="testing a single module" width="200" style="margin-right: 20px;">
+    <div>
+        <ul>
+            <li>poor readability</li>
+            <li class="fragment" data-fragment-index="1">repetition</li>
+    </ul>
+  </div>
+</div>
+
+===
+
+<!-- .slide: data-state="standard"  -->
+
+## Repetitive code
 
 - Don't Repeat Yourself (DRY): place reused code into a function
-- Identify potential functions by their _action_
-    (e.g. "plotting", "transforming", "extracting", "saving")
+- Identify functions units by their _action_
+  - (e.g. "plot", "transform", "extract", "save")
+
+<img height="350" alt="DRY" src="./media/modular-code/dry-vs-wet-code.jpg">
+
+===
+
+<!-- .slide: data-state="standard"  -->
+
+## Identifying opportunities for modularization
+
+<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px;">
+    <img src="./media/modular-code/testing_module.png" alt="testing a single module" width="200" style="margin-right: 20px;">
+    <div>
+        <ul>
+            <li>poor readability</li>
+            <li>repetition</li>
+            <li class="fragment" data-fragment-index="1">nested code</li>
+    </ul>
+  </div>
+</div>
 
 ===
 
@@ -241,45 +386,61 @@ def fahrenheit_to_celsius(temp_f):
 
 Nested code is a prime target for modularization:
 
-```python=
-def checkTemperature(degrees):
-    if degrees < 0:
-        if degrees < -273:
-            if degrees < -459:
-                print("This temperature is impossible.")
-            else:
-                print("This temperature is likely Fahrenheit.")
-        else:
-            print("This temperature is either Celsius or Fahrenheit.")
-    else:
-        print("This temperature is in Kelvin, Celsius, or Fahrhenheit.")
+```python
+def sum_even_numbers(bottom, top):
+    if top > bottom:
+        sum = 0
+        for x in range(bottom, top):
+            if x % 2 == 0:
+                sum += x
+        return sum
+    return 0
+
+sum_even_numbers(2, 14)  # 42
 ```
 
 ===
 
 <!-- .slide: data-state="standard"  -->
 
-## Reduce nestedness
+## Reduce nestedness...
 
-by extracting modules:
+... by extracting modules:
 
-```python=
-def validTemp(degrees):
-    if degrees < -459:
-        return FALSE
-    return TRUE
+```python
+def _filter_even(number):
+    if number % 2 == 0:
+        return number
+    return 0
 
-def checkTemperature(degrees):
-    if not validTemp(degrees):
-        return "invalid temperature"
-    if degrees < 0:
-        if degrees < -273:
-            print("This temperature is likely Fahrenheit.")
-        else:
-            print("This temperature is either Celsius or Fahrenheit.")
-    else:
-        print("This temperature is in Kelvin, Celsius, or Fahrhenheit.")
+def sum_even_numbers(bottom, top):
+    if top < bottom:
+        return 0
+    
+    sum = 0
+    for x in range(bottom, top):
+        sum += _filter_even(x)
+    return sum
+
+sum_even_numbers (2,14)  # 42
 ```
+
+===
+
+<!-- .slide: data-state="standard"  -->
+
+## Identifying opportunities for modularization
+
+<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px;">
+    <img src="./media/modular-code/testing_module.png" alt="testing a single module" width="200" style="margin-right: 20px;">
+    <div>
+        <ul>
+            <li>poor readability</li>
+            <li>repetition</li>
+            <li>nested code</li>
+    </ul>
+  </div>
+</div>
 
 ===
 
@@ -288,7 +449,10 @@ def checkTemperature(degrees):
 ## Let tests help you
 
 - Write tests for each individual module
+<!-- .element: class="fragment" data-fragment-index="2" -->
 - Use the test-writing procedure to look critically at the module's function:
+<!-- .element: class="fragment" data-fragment-index="3" -->
     - Is the input/output clear?
+<!-- .element: class="fragment" data-fragment-index="3" -->
     - What can you not yet test? Extract it into a new module.
-
+<!-- .element: class="fragment" data-fragment-index="3" -->
