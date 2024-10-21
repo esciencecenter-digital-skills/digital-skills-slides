@@ -14,7 +14,7 @@ description: Day 3 Code Refinery
 
 <!-- .slide: data-state="standard"  -->
 
-<img style="height: 550px;" src="./media/dpaint.png"/>
+<img style="height: 550px;" src="./media/paint.png"/>
 
 ===
 
