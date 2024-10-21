@@ -117,7 +117,7 @@ Most modern programming languages have good options to streamline testing
 
 ## Testing metrics
 
-#### Targets are arbitrary and indicative of but do not guarantee strong testing.
+#### Targets are arbitrary and indicative
 
 <div style="display: flex; justify-content: center; align-items: center">
   <div>
@@ -141,177 +141,114 @@ Most modern programming languages have good options to streamline testing
   <img src="./media/testing/metrics.jpg" width="300" style="margin-left: 60px">
 </div>
 
-  
-
 ===
 
 <!-- .slide: data-state="standard" -->
 
-## Misleading metrics
+## Write Code
 
-Consider this function...
-```python
-def fahrenheit_to_celsius(temp_list, converted_temps=[]):
-    for temp in temp_list:
-        temp_c = (temp - 32.0) * (5.0/9.0)
-        converted_temps.append(temp_c)
-    return converted_temps
-```
-
-...and these tests with 100% coverage:
-<!-- .element: class="fragment" data-fragment-index="2" -->
-```python
-assert fahrenheit_to_celsius([32.0, 77.0]) == [0.0, 25.0]
-assert (fahrenheit_to_celsius([100], converted_temps = [0.0, 25.0])
-        == [0.0, 25.0, 37.77777777777778])
-```
-<!-- .element: class="fragment" data-fragment-index="2" -->
-
-Q: Can you think of a problem that will not be caught?
-<!-- .element: class="fragment" data-fragment-index="3" -->
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-
-## Writing a test file
-
-Create a file called test_example.py ...
 <pre><code class="bash" style="overflow: hidden;" data-trim class="bash" data-line-numbers>
 $ mkdir pytest-example
 $ cd pytest-example
-$ nano test_example.py
 </code></pre>
 
 <div class="fragment">
-... and add the function and tests from before:
+Creating a file <code>example.py</code> containing
 <pre><code class="python" style="overflow: hidden;" data-trim class="bash" data-line-numbers>
-def fahrenheit_to_celsius(temp_list, converted_temps=[]):
-    for temp in temp_list:
-        temp_c = (temp - 32.0) * (5.0/9.0)
-        converted_temps.append(temp_c)
-    return converted_temps
+def add(a, b):
+    return a + b
 &nbsp;
 &nbsp;
-def test_convert():  # Special name!
-    assert fahrenheit_to_celsius([32.0, 77.0]) == [0.0, 25.0]
-    assert (fahrenheit_to_celsius([100], converted_temps = [0.0, 25.0])
-            == [0.0, 25.0, 37.77777777777778])
+def test_add():  # Special name!
+    assert add(2, 3) == 5  # What's `assert`? 🤔
+    assert add('space', 'ship') == 'spaceship'
 </code></pre>
+</div>
+
+<div class="fragment">
+Chat with the python shell about <code>assert</code> ...
+</div>
+<div class="fragment">
+<pre><code class="python" style="overflow: hidden;" data-trim class="bash" data-line-numbers>
+>>> assert 1==1  # passes
+>>> assert 1==2  # throws error
+Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+AssertionError
+</code></pre>
+
 </div>
 
 ===
 
 <!-- .slide: data-state="standard" -->
 
-## Running Pytest
+## Test!
 
-The `pytest` command will run all functions starting with "test_" from all files starting with "test_".
-
-
-<pre class="fragment"><code style="overflow: hidden;" data-trim class="bash" data-line-numbers="1|1-9">
-$ pytest
+<pre><code style="overflow: hidden;" data-trim class="bash" data-line-numbers="1|1-9">
+$ pytest example.py
 ======================== test session starts ========================
 platform linux -- Python 3.6.9, pytest-7.0.1, pluggy-1.0.0
 rootdir: /home/ole/Desktop/pytest-texample
 collected 1 item
 
-test_example.py .                                                  [100%]
+example.py .                                                  [100%]
 
 ========================= 1 passed in 0.00s =========================
 </code></pre>
 
-
 ===
 
 <!-- .slide: data-state="standard" -->
 
-## Pytest Exercise
+## Breaking Things
 
-1. Add a test to catch "problematic" behavior of the function.
-    - don't fix the function (yet)
-2. Run pytest to see what the response looks like. 
-    - what information can you gather from the response?
-3. Fix the function and rerun the test
-
-<div>
 <pre><code class="python" style="overflow: hidden;" data-trim class="bash" data-line-numbers>
-def fahrenheit_to_celsius(temp_list, converted_temps=[]):
-    for temp in temp_list:
-        temp_c = (temp - 32.0) * (5.0/9.0)
-        converted_temps.append(temp_c)
-    return converted_temps
-&nbsp;
-&nbsp;
-def test_convert():
-    assert fahrenheit_to_celsius([32.0, 77.0]) == [0.0, 25.0]
-    assert (fahrenheit_to_celsius([100], converted_temps = [0.0, 25.0])
-            == [0.0, 25.0, 37.77777777777778])
+def add(a, b):
+    return a - b  # Uh oh, mistake! 😱
+
+
+def test_add():
+    assert add(2, 3) == 5
+    assert add('space', 'ship') == 'spaceship'
 </code></pre>
-</div>
 
 ===
 
 <!-- .slide: data-state="standard" -->
 
-## Breaking the test 
+## Testing Again
 
-1. Add a test to catch problematic behavior of the function.
-
-<div class="fragment">
-<pre><code class="python" style="overflow: hidden;" data-trim class="bash" data-line-numbers="1-11|12">
-def fahrenheit_to_celsius(temp_list, converted_temps=[]):
-    for temp in temp_list:
-        temp_c = (temp - 32.0) * (5.0/9.0)
-        converted_temps.append(temp_c)
-    return converted_temps
-&nbsp;
-&nbsp;
-def test_convert():
-    assert fahrenheit_to_celsius([32.0, 77.0]) == [0.0, 25.0]
-    assert (fahrenheit_to_celsius([100], converted_temps = [0.0, 25.0])
-            == [0.0, 25.0, 37.77777777777778])
-    assert fahrenheit_to_celsius([32.0, 77.0]) == [0.0, 25.0]
-</code></pre>
-</div>
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-## Failing tests
-
-<pre style="width: 100%; max-width: 1200px; overflow: auto;"><code style="overflow: hidden;" data-trim class="bash" data-line-numbers="1|2-8|9-22|23-26">
+<pre><code style="overflow: hidden;" data-trim class="bash" data-line-numbers="1|2-8|9-17|18-20">
 $ pytest example.py
 ======================== test session starts =========================
 platform linux -- Python 3.6.9, pytest-7.0.1, pluggy-1.0.0
 rootdir: /home/ole/Desktop/pytest-texample
 collected 1 item
 
-test_example.py F                                                   [100%]
+example.py F                                                   [100%]
 
 ============================== FAILURES ==============================
-______________________________ test_convert ______________________________
+______________________________ test_add ______________________________
 
-    def test_convert():  # Special name!
-        assert fahrenheit_to_celsius([32.0, 77.0]) == [0.0, 25.0]
-        assert (fahrenheit_to_celsius([100], converted_temps = [0.0, 25.0])
-                == [0.0, 25.0, 37.77777777777778])
->       assert fahrenheit_to_celsius([32.0, 77.0]) == [0.0, 25.0]
-E       assert [0.0, 25.0, 0.0, 25.0] == [0.0, 25.0]
-E         
-E         Left contains 2 more items, first extra item: 0.0
-E         Use -v to get more diff
+    def test_add():
+>       assert add(2, 3) == 5
+E       assert -1 == 5
+E        +  where -1 = add(2, 3)
 
-test_example.py:11: AssertionError
-============================= short test summary info =============================
-FAILED test_example.py::test_convert - assert [0.0, 25.0, 0.0, 25.0] == [0.0, 25.0]
-================================ 1 failed in 0.67s ================================
-&nbsp;
+example.py:6: AssertionError
+====================== short test summary info =======================
+FAILED example.py::test_add - assert -1 == 5
+========================= 1 failed in 0.05s ==========================
 </code></pre>
 
+<ul>
+  <li class="fragment">🚀❓<span class="fragment">Functions fail on first error</span></li>
+  <li class="fragment">But all test functions are executed</li>
+</ul>
+
 ===
+
 
 <!-- .slide: data-state="standard" -->
 
