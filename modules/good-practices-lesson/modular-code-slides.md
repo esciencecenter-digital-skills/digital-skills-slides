@@ -462,8 +462,7 @@ sum_even_numbers (2,14)  # 42
     - Is the input/output clear?
 <!-- .element: class="fragment" data-fragment-index="3" -->
     - What can you not yet test? Extract it into a new module.
-<!-- .element: class="fragment" data-fragment-index="3" -->
-```
+
  
 
 
