@@ -160,3 +160,15 @@ Which command saves <b>myfile.txt</b> to my Git repo?<br>
 - **git add**&nbsp; puts files in the staging area
 - **git commit**&nbsp; saves the staged content as a new commit in the local repository
 - Write short, descriptive, and imperative commit messages
+
+===
+
+<!-- .slide: data-state="standard" -->
+## Exploring history
+<img src="https://esciencecenter-digital-skills.github.io/git-lesson/fig/git-restore.svg">
+
+Use `git restore` with the `-s` option to retrieve a specific state. 
+
+Note:
+In this example we restore to the state before the most recent commit, 
+which is `HEAD~1` or `f22b25e`
