@@ -47,8 +47,8 @@ Simple components combined to produce complex behavior.
 
 ## What are these blocks/elements?
 
-<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px;">
-    <img src="./media/modular-code/building_blocks.png" alt="building blocks" height="200" style="margin-right: 20px;">
+<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px; max-width: 100%;">
+    <img src="./media/modular-code/building_blocks.png" alt="building blocks" style="max-width: 40%; height: auto; margin-right: 20px;">
     <div>
         <ul>
             <li class="fragment" data-fragment-index="1">functions</li>
@@ -109,13 +109,16 @@ To allow reusability:
 
 To facilitate scalability:
 
-<img height="300" alt="scalability" src="./media/modular-code/scalability.png">
+<div style="display: flex; align-items: center;">
 
+  <img alt="scalability" src="./media/modular-code/scalability.png" style="max-width: 40%; height: auto; margin-right: 20px;">
 
-<div>
-
-- Complexity remains low by design.
-- This creates space for scaling up.
+  <div>
+    <ul>
+      <li>Complexity remains low by design.</li>
+      <li>This creates space for scaling up.</li>
+    </ul>
+  </div>
 
 </div>
 
@@ -127,7 +130,7 @@ To facilitate scalability:
 
 To create opportunities for innovation:
 
-<img height="300" alt="tetris shows innovation" src="./media/modular-code/tetris_innovation.png">
+<img alt="tetris shows innovation" src="./media/modular-code/tetris_innovation.png" style="max-width: 50%; height: auto;">
 
 - Modules increase the capabilities and power of a project.
 - Rearrange old modules for new applications.
@@ -148,7 +151,7 @@ To save time:
 ## A good module...
 
 <div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px;">
-    <img src="./media/modular-code/units.png" alt="units" width="200" style="margin-right: 20px;">
+    <img src="./media/modular-code/units.png" alt="units" width="300" style="margin-right: 20px;">
     <div>
         <ul>
             <li class="fragment" data-fragment-index="1">performs limited and clearly defined tasks</li>
@@ -168,7 +171,9 @@ To save time:
 - follow language specific conventions
 - avoid abbreviations
 
-<img height="450" alt="naming" src="./media/modular-code/naming_stuff.jpg">
+<div style="text-align: center; margin-top: 20px;">
+    <img alt="naming" src="./media/modular-code/naming_stuff.jpg" style="max-width: 100%; height: auto; max-height: 300px;">
+</div>
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
 ===
@@ -178,7 +183,7 @@ To save time:
 ## A good module...
 
 <div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px;">
-    <img src="./media/modular-code/units.png" alt="units" width="200" style="margin-right: 20px;">
+    <img src="./media/modular-code/units.png" alt="units" width="300" style="margin-right: 20px;">
     <div>
         <ul>
             <li>performs limited and clearly defined tasks</li>
@@ -219,7 +224,7 @@ indexAAG = getIndex(myList,'AAG')
 ## A good module...
 
 <div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px;">
-    <img src="./media/modular-code/units.png" alt="units" width="200" style="margin-right: 20px;">
+    <img src="./media/modular-code/units.png" alt="units" width="300" style="margin-right: 20px;">
     <div>
         <ul>
             <li>performs limited and clearly defined tasks</li>
@@ -286,7 +291,7 @@ def fahrenheit_to_celsius(temp_list, converted_temps=None):
 ## A good module...
 
 <div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px;">
-    <img src="./media/modular-code/units.png" alt="units" width="200" style="margin-right: 20px;">
+    <img src="./media/modular-code/units.png" alt="units" width="300" style="margin-right: 20px;">
     <div>
         <ul>
             <li>performs limited and clearly defined tasks</li>
@@ -304,7 +309,7 @@ def fahrenheit_to_celsius(temp_list, converted_temps=None):
 ## Identifying opportunities for modularization
 
 <div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px;">
-    <img src="./media/modular-code/testing_module.png" alt="testing a single module" width="200" style="margin-right: 20px;">
+    <img src="./media/modular-code/testing_module.png" alt="testing a single module" width="300" style="margin-right: 20px;">
     <div>
         <ul>
             <li class="fragment" data-fragment-index="2">poor readability</li>
@@ -340,7 +345,7 @@ Modular code becomes more readable
 ## Identifying opportunities for modularization
 
 <div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px;">
-    <img src="./media/modular-code/testing_module.png" alt="testing a single module" width="200" style="margin-right: 20px;">
+    <img src="./media/modular-code/testing_module.png" alt="testing a single module" width="300" style="margin-right: 20px;">
     <div>
         <ul>
             <li>poor readability</li>
@@ -359,7 +364,9 @@ Modular code becomes more readable
 - Identify functions units by their _action_
   - (e.g. "plot", "transform", "extract", "save")
 
-<img height="350" alt="DRY" src="./media/modular-code/dry-vs-wet-code.jpg">
+<div style="text-align: center; margin-top: 20px;">
+    <img alt="DRY" src="./media/modular-code/dry-vs-wet-code.jpg" style="max-width: 100%; height: auto; max-height: 300px;">
+</div>
 
 ===
 
@@ -368,7 +375,7 @@ Modular code becomes more readable
 ## Identifying opportunities for modularization
 
 <div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px;">
-    <img src="./media/modular-code/testing_module.png" alt="testing a single module" width="200" style="margin-right: 20px;">
+    <img src="./media/modular-code/testing_module.png" alt="testing a single module" width="300" style="margin-right: 20px;">
     <div>
         <ul>
             <li>poor readability</li>
@@ -432,7 +439,7 @@ sum_even_numbers (2,14)  # 42
 ## Identifying opportunities for modularization
 
 <div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px;">
-    <img src="./media/modular-code/testing_module.png" alt="testing a single module" width="200" style="margin-right: 20px;">
+    <img src="./media/modular-code/testing_module.png" alt="testing a single module" width="300" style="margin-right: 20px;">
     <div>
         <ul>
             <li>poor readability</li>
@@ -456,3 +463,7 @@ sum_even_numbers (2,14)  # 42
 <!-- .element: class="fragment" data-fragment-index="3" -->
     - What can you not yet test? Extract it into a new module.
 <!-- .element: class="fragment" data-fragment-index="3" -->
+```
+ 
+
+
