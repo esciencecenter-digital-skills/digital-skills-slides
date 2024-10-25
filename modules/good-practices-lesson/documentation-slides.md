@@ -192,6 +192,22 @@ They follow a standardized syntax.
 
 ===
 
+<!-- .slide: data-state="standard"  -->
+
+## Open source licensing and publishing
+
++ **License**
+  - For reuse, modification, and distribution
+  - e.g., Apache 2.0, a community-accepted license
++ **Software attribution and metadata**
+  - Makes it easy for others to properly cite your software
+  - e.g., CFF format
++ **Archive for long-term access**
+  - DOI for stable referencing and citation
+  - e.g., Zenodo, which integrates with GitHub
+
+===
+
 <!-- .slide: data-state="standard" -->
 
 ## Take-home message

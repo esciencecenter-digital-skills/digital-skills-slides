@@ -72,6 +72,18 @@ note:
 
 </style>
 
+<!-- .slide: data-state="standard"  -->
+
+## Who are we?
+
++ **The Netherlands eScience Center is a national center for innovative software solutions in academic research**
++ **Our Research Software Engineers**
+  - Help researchers interpret results
+  - Make tools and methods reusable for the wider research community
+  - Co-author research and methodological publications. 
+
+===
+
 
 ## Programming vs Software Engineering
 

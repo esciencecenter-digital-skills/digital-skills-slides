@@ -114,20 +114,8 @@ Allows to identify any conflicts and bugs that are introduced by changes, so the
 - Security analyses
 - Send messages
   - Slack, Discord, Matrix, Mastodon, email, ...
+- TRY TRY TRY
 
-
-===
-
-
-<!-- .slide: data-state="standard" -->
-
-## CI service providers
-
-- GitHub Actions
-- GitLab CI
-- Azure Pipelines
-- Jenkins
-- etc
 
 ===
 
@@ -139,27 +127,3 @@ Allows to identify any conflicts and bugs that are introduced by changes, so the
 - CI saves time and keeps your project clean
 - What improvements could your project benefit from?
 - What's nice to know, but overkill for your current work?
-
-===
-
-<!-- .slide: data-state="standard" -->
-
-## Hands-On
-
-<div style="float: left; width: 60%; margin-bottom: 1em;">
-  <ol>
-    <li><strong>Person A: </strong>Ensure your repository has tests</li>
-    <li><strong>Person A: </strong>Set up Continuous Integration (automatic testing)</li>
-    <li><strong>Person A: </strong>Verify that tests ran</li>
-    <li><strong>Person A: </strong>Add a test that fails</li>
-    <li><strong>Person A: </strong>Open an issue</li>
-    <li><strong>Person B: </strong>Fork ⚠️ and clone person A's repo</li>
-    <li><strong>Person B: </strong>Fix the broken test</li>
-    <li><strong>Person B: </strong>Open a pull request linked to the issue</li>
-    <li><strong>Person B: </strong>Verify that tests now run</li>
-    <li><strong>Person A: </strong>Accept Person B's pull request</li>
-  </ol>
-</div>
-<img style="float: right; width: 39%;" src="./media/ci/full-cycle-ci.png">
-
-
