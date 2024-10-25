@@ -282,20 +282,3 @@ def sum_even_numbers(bottom, top):
 
 sum_even_numbers (2,14)  # 42
 ```
-
-===
-
-<!-- .slide: data-state="standard"  -->
-
-## Identifying opportunities for modularization
-
-<div style="display: flex; justify-content: center; align-items: flex-start; margin-top: 20px;">
-    <img src="./media/modular-code/testing_module.png" alt="testing a single module" width="300" style="margin-right: 20px;">
-    <div>
-        <ul>
-            <li>poor readability</li>
-            <li>repetition</li>
-            <li>nested code</li>
-    </ul>
-  </div>
-</div>

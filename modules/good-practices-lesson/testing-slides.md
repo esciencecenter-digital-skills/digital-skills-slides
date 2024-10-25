@@ -73,21 +73,19 @@ description: Getting more professional
 ## Test Types
 
 <ul>
-  <span class="fragment fade-out" data-fragment-index="4">
-    <li class="fragment fade-up" data-fragment-index="1">Exceptions in the code base
+    <li class="fragment">Exceptions in the code base
     <ul>
       <li>Intended to handle "expected" problems</li>
       <li>Sound an alarm as soon as the problem arises</li>
       <li>Provide clear feedback to the user</li>
   </ul></li></span>
-  <li class="fragment fade-up" data-fragment-index="2">Unit testing
+  <li class="fragment">Unit testing
   <ul>
     <li>Smallest possible unit (module)</li>
     <li>No dependency on outside code...</li>
     <li>(... replace them with mocks, stubs, etc.)</li>
   </ul></li>
-  <span class="fragment fade-out" data-fragment-index="4">
-  <li class="fragment fade-up" data-fragment-index="3">Integration testing
+  <li class="fragment">Integration testing
   <ul>
     <li>Test interactions between units</li>
     <li>Can be on small scales, system wide, ...</li>

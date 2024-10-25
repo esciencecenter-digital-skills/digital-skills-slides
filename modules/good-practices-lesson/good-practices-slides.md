@@ -76,11 +76,19 @@ note:
 
 ## Who are we?
 
-+ **The Netherlands eScience Center is a national center for innovative software solutions in academic research**
-+ **Our Research Software Engineers**
-  - Help researchers interpret results
-  - Make tools and methods reusable for the wider research community
-  - Co-author research and methodological publications. 
+<div style="display: flex; align-items: center;">
+  <img alt="scalability" src="./media/good-practices/office.jpg" style="max-width: 40%; height: auto; margin-right: 20px;">
+  <ul>
+    <li><strong>The Netherlands eScience Center is a national center for innovative software solutions in academic research</strong></li>
+    <li><strong>Our Research Software Engineers</strong>
+      <ul>
+        <li>Help researchers interpret results</li>
+        <li>Make tools and methods reusable for the wider research community</li>
+        <li>Co-author research and methodological publications</li>
+      </ul>
+    </li>
+  </ul>
+</div>
 
 ===
 
@@ -133,7 +141,7 @@ What's the difference between programming and software engineering?
 
 ## Projects are Different
 
-<img style="height: 70vh;" src="./media/good-practices/branching.png"/>
+<img style="height: auto;" src="./media/good-practices/branching.png"/>
 
 ===
 
