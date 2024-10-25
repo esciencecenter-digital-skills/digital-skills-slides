@@ -17,7 +17,9 @@ description: Training Programme
 
 
 <div style="display: flex; align-items: center;">
-  <img alt="scalability" src="./media/training/schedule2425.png" style="max-width: 40%; height: auto; margin-right: 20px;">
+  <img alt="scalability" src="./media/training/schedule2425.png" style="width: auto; height: auto; margin-right: 20px;">
+</div>
+<div style="display: flex; align-items: center;">
   <ul>
     <li><strong>For exact dates of upcoming workshops (3 months in advance): </strong></li>
       <ul>
