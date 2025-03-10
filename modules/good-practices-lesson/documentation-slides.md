@@ -37,8 +37,8 @@ description: Day 3 Code Refinery
 
 <div class="fragment">
 
-+ README files
-+ In-code documentation
++ README files and CITATION files
++ In-code documentation (Docstrings)
 + API documentation
 + Tutorials
 + ...
@@ -70,11 +70,24 @@ Note:
 + Installation / How to setup
 + Copy-pasteable quick start code example
 + Usage reference (if not elsewhere)
-+ Recommended citation if someone uses it
++ Citation if someone uses it
 + Other related tools ("see also")
 + Contact information for the developer(s)
++ Badges
 + License information
 + Contributing guidelines
+
+===
+
+<!-- .slide: data-state="standard"  -->
+
+## Why citation?
+
++ Unlike papers, softwares are difficult to cite
++ To get credit, provide citation information at the root of your project, e.g. using a CITATION.cff (Citation File Format) file.
++ Citation files are easy to create (e.g. using cffinit)
++ Gather all the required information in one place
++ Automatically picked up by platforms like GitHub, Zenodo ...
 
 ===
 
