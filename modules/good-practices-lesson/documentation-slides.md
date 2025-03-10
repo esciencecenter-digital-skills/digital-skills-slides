@@ -80,6 +80,17 @@ Note:
 
 <!-- .slide: data-state="standard"  -->
 
+## Badges
+
+Badges are a way to quickly show the status of a project: is it building, is it tested, what is the license? 
+You typically find them on top of the README file.
+
+![Badges on top of a Readme file](media/documentation/documentation-badges.png).
+
+===
+
+<!-- .slide: data-state="standard"  -->
+
 ## Why write in-code documentation?
 
 In-code documentation:
