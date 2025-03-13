@@ -81,6 +81,17 @@ Note:
 
 <!-- .slide: data-state="standard"  -->
 
+## Badges
+
+Badges are a way to quickly show the status of a project: is it building, is it tested, what is the license? 
+You typically find them on top of the README file.
+
+![Badges on top of a Readme file](media/documentation/documentation-badges.png).
+
+===
+
+<!-- .slide: data-state="standard"  -->
+
 ## Why citation?
 
 + Unlike papers, softwares are difficult to cite
@@ -196,12 +207,22 @@ They follow a standardized syntax.
 
 ## Tools
 
++ **mkdocs** (documentation generator)
+  - creates nicely-formatted HTML pages out of .md files
+  - easy to use and deploy (e.g. GitHub pages)
 + **Sphinx** (documentation generator)
   - creates nicely-formatted HTML pages out of .md or .rst files
   - programming language independent
 + **Github pages** (deploy your documentation)
   - set up inside your GitHub repository
   - automatically deploys your Sphinx-generated documentation
+
+===
+
+<!-- .slide: data-state="standard"  -->
+
+## mkdocs example
+
 
 ===
 
