@@ -37,8 +37,8 @@ description: Day 3 Code Refinery
 
 <div class="fragment">
 
-+ README files
-+ In-code documentation
++ README files and CITATION files
++ In-code documentation (Docstrings)
 + API documentation
 + Tutorials
 + ...
@@ -70,9 +70,10 @@ Note:
 + Installation / How to setup
 + Copy-pasteable quick start code example
 + Usage reference (if not elsewhere)
-+ Recommended citation if someone uses it
++ Citation if someone uses it
 + Other related tools ("see also")
 + Contact information for the developer(s)
++ Badges
 + License information
 + Contributing guidelines
 
@@ -86,6 +87,18 @@ Badges are a way to quickly show the status of a project: is it building, is it 
 You typically find them on top of the README file.
 
 ![Badges on top of a Readme file](media/documentation/documentation-badges.png).
+
+===
+
+<!-- .slide: data-state="standard"  -->
+
+## Why citation?
+
++ Unlike papers, softwares are difficult to cite
++ To get credit, provide citation information at the root of your project, e.g. using a CITATION.cff (Citation File Format) file.
++ Citation files are easy to create (e.g. using cffinit)
++ Gather all the required information in one place
++ Automatically picked up by platforms like GitHub, Zenodo ...
 
 ===
 
@@ -194,12 +207,36 @@ They follow a standardized syntax.
 
 ## Tools
 
++ **mkdocs** (documentation generator)
+  - creates nicely-formatted HTML pages out of .md files
+  - easy to use and deploy (e.g. GitHub pages)
 + **Sphinx** (documentation generator)
   - creates nicely-formatted HTML pages out of .md or .rst files
   - programming language independent
 + **Github pages** (deploy your documentation)
   - set up inside your GitHub repository
   - automatically deploys your Sphinx-generated documentation
+
+===
+
+<!-- .slide: data-state="standard"  -->
+
+## Using mkdocs
+
++ In a new code directory, run `mkdocs new .`
++ Edit the `mkdocs.yml` file to configure your documentation
++ Run `mkdocs build` to generate the documentation site
++ Run `mkdocs serve` to serve the documentation site (open in your browser)
++ Use the `mkdocstrings` to automatically generate API documentation
++ Use `mkdocs gh-deploy` to deploy your documentation to GitHub
+
+===
+
+<!-- .slide: data-state="standard"  -->
+
+## Using mkdocs
+
+![mkdocs](media/documentation/mkdocs.png)
 
 ===
 
