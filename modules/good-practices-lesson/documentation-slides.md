@@ -221,8 +221,22 @@ They follow a standardized syntax.
 
 <!-- .slide: data-state="standard"  -->
 
-## mkdocs example
+## Using mkdocs
 
++ In a new code directory, run `mkdocs new .`
++ Edit the `mkdocs.yml` file to configure your documentation
++ Run `mkdocs build` to generate the documentation site
++ Run `mkdocs serve` to serve the documentation site (open in your browser)
++ Use the `mkdocstrings` to automatically generate API documentation
++ Use `mkdocs gh-deploy` to deploy your documentation to GitHub
+
+===
+
+<!-- .slide: data-state="standard"  -->
+
+## Using mkdocs
+
+![mkdocs](media/documentation/mkdocs.png)
 
 ===
 
