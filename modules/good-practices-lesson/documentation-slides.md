@@ -104,6 +104,21 @@ You typically find them on top of the README file.
 
 <!-- .slide: data-state="standard"  -->
 
+## Minimal example of CITATION.cff file
+
+```yaml
+authors:
+  - family-names: Doe
+    given-names: Jane
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+title: "My research software"
+```
+
+===
+
+<!-- .slide: data-state="standard"  -->
+
 ## Why write in-code documentation?
 
 In-code documentation:
@@ -207,12 +222,12 @@ They follow a standardized syntax.
 
 ## Tools
 
-+ **mkdocs** (documentation generator)
-  - creates nicely-formatted HTML pages out of .md files
-  - easy to use and deploy (e.g. GitHub pages)
-+ **Sphinx** (documentation generator)
++ Documentation generators (e.g. **mkdocs**, **Sphinx**)
   - creates nicely-formatted HTML pages out of .md or .rst files
+  - numerous plugins available to extend functionality (API, spellcheck, etc.)
   - programming language independent
+  - easy to use and deploy (e.g. GitHub pages)
+  - **mkdocs** easier to start with, but **Sphinx** is more complete and robust
 + **Github pages** (deploy your documentation)
   - set up inside your GitHub repository
   - automatically deploys your Sphinx-generated documentation
@@ -221,7 +236,7 @@ They follow a standardized syntax.
 
 <!-- .slide: data-state="standard"  -->
 
-## Using mkdocs
+## Using **mkdocs**
 
 + In a new code directory, run `mkdocs new .`
 + Edit the `mkdocs.yml` file to configure your documentation
@@ -234,7 +249,7 @@ They follow a standardized syntax.
 
 <!-- .slide: data-state="standard"  -->
 
-## Using mkdocs
+## Using **mkdocs**
 
 ![mkdocs](media/documentation/mkdocs.png)
 
