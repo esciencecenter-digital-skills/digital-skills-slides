@@ -20,23 +20,19 @@ What is version control and why should I use it?
 ===
 
 <!-- .slide: data-state="standard" -->
-## Documents are...
+
+## Controlling Versions
 <div class="fragment">
-  a series of changes
-  <img style="height: 30vh; margin: 0; padding: 0;" src="https://swcarpentry.github.io/git-novice/fig/play-changes.svg"/>
+  <img style="height: 50vh;" src="./media/revisions.png"/>
 </div>
 
 ===
 
 <!-- .slide: data-state="standard" -->
-## Collaboration
-<div style="float: left; width: 49%;">
-  independent changes
-  <img style="height: 350px;" src="./media/versions.svg"/>
-</div>
-<div class="fragment" style="float: right; width: 49%;">
-  can be merged
-  <img style="height: 350px;" src="./media/merge.svg"/>
+## Documents are...
+<div class="fragment">
+  a series of changes
+  <img style="height: 30vh; margin: 0; padding: 0;" src="https://swcarpentry.github.io/git-novice/fig/play-changes.svg"/>
 </div>
 
 ===
@@ -51,7 +47,24 @@ What is version control and why should I use it?
 ===
 
 <!-- .slide: data-state="standard" -->
-## The Holy Realms of Git
+## Configuration
+
+Some minimal configuration to get started
+
+<code data-trim class="bash">
+<div class="fragment" style="float: left;">
+$ git config --global user.name "Your Name"
+</div><div class="fragment" style="float: left;">
+$ git config --global user.email "your.email@example.com"
+</div><div class="fragment" style="float: left;">
+$ git config --global core.editor nano
+</div>
+</code>
+
+===
+
+<!-- .slide: data-state="standard" -->
+## The Three Stages of Git
 
 <img src="https://swcarpentry.github.io/git-novice/fig/git-staging-area.svg">
 
@@ -76,37 +89,25 @@ What is version control and why should I use it?
 ===
 
 <!-- .slide: data-state="standard" -->
-## Crowded Staging Area / Index
-
-<img src="https://swcarpentry.github.io/git-novice/fig/git-committing.svg">
-
-The Staging Area / Index can hold many files and folders.
-
-===
-
-<!-- .slide: data-state="standard" -->
-## Quiz 1/2
+## Quiz
 
 <blockquote style="text-align: left;">
 Which commit message should I choose?
 <ol>
   <li>“Changes”</li>
-  <li>“Added line ‘This project started as a joke’ to myfile.txt”</li>
+  <li>“Added line ‘This is a Coding Cafe demo project.' to README.txt”</li>
   <li>“Discuss origin of the project”</li>
 </ol>
 </code></pre>
 </blockquote>
 <blockquote class="fragment" style="text-align: right;">
-Make it short, descriptive, and imperative <span style="font-style: normal;">🧑‍🏫</span>
-</blockquote>
-<blockquote class="fragment" style="text-align: right;">
-So yeah, the last one is good! <span style="font-style: normal;">🧑‍🏫</span>
+3: Make it short, descriptive, and imperative <span style="font-style: normal;">🧑‍🏫</span>
 </blockquote>
 
 ===
 
-<!-- .slide: data-state="standard" -->
-## Quiz 2/2
+<!-- .slide: data-state="standard"
+## Quiz
 
 <blockquote style="text-align: left;">
 Which command saves <b>myfile.txt</b> to my Git repo?<br>
@@ -138,19 +139,15 @@ Which command saves <b>myfile.txt</b> to my Git repo?<br>
 </blockquote>
 <blockquote class="fragment" style="text-align: right;">
 3. adds your file to the index, and then commits it. That's the one.
-<span style="font-style: normal;">🐺</span>
+<span style="font-style: normal;">🧑‍🏫</span>
 </blockquote>
 
-
 ===
+-->
 
 <!-- .slide: data-state="standard" -->
 ## Tracking Changes: Key Points
 
-- Files can be stored in
-  - **working directory**: the files you can see
-  - **staging area / index**: files about to be committed
-  - **local repository**: the permanent record
 - **git status**&nbsp; shows the status of a repository
 - **git add**&nbsp; puts files in the staging area
 - **git commit**&nbsp; saves the staged content as a new commit in the local repository
@@ -167,3 +164,43 @@ Use `git restore` with the `-s` option to retrieve a specific state.
 Note:
 In this example we restore to the state before the most recent commit, 
 which is `HEAD~1` or `f22b25e`
+
+===
+
+<!-- .slide: data-state="standard" -->
+## Collaboration
+<div style="float: left; width: 49%;">
+  independent changes
+  <img style="height: 350px;" src="./media/versions.svg"/>
+</div>
+<div class="fragment" style="float: right; width: 49%;">
+  can be merged
+  <img style="height: 350px;" src="./media/merge.svg"/>
+</div>
+
+===
+
+<!-- .slide: data-state="standard" -->
+## References
+
+#### Cheat Sheets
+<ul>
+  <li>PDF
+  <a href="https://wizardzines.com/git-cheat-sheet.pdf">wizardzines.com/git-cheat-sheet.pdf</a>
+  </li>
+  <li>Interactive
+  <a href="https://ndpsoftware.com/git-cheatsheet.html#loc=index;">ndpsoftware.com/git-cheatsheet.html</a>
+  </li>
+</ul>
+
+<br><br>
+
+#### eScience Center
+<ul>
+  <li>
+  <a href="esciencecenter.nl">esciencecenter.nl/about-us</a>
+  </li>
+  <li>Upcoming Workshops
+  <a href="esciencecenter.nl">esciencecenter.nl/events</a>
+  </li>
+</ul>
