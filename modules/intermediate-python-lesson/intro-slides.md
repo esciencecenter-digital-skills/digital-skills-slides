@@ -82,7 +82,7 @@ From thrown-together scripts, through an abundance of complex spreadsheets, to t
   <br>
   <li>Difficult to gauge to what extent it might be used in the future
   <ul>
-    <li>By who?
+    <li>By whom?
     <li>Which parts?
     <li>Which projects?
     <li>Reproducibility of results &mdash; from publications!
@@ -227,7 +227,7 @@ About working through the material
 - Exercises - try to do them on your own (before looking at the solution)
 - Exercises - don't skip them! Some later materials depend on this
 - Optional exercises are clearly marked - all other exercises should be completed
-- Please finish the section in the rest of the week if you were note finished. Note that section 1 is a bit bigger than the other sections.
+- Please finish the section in the rest of the week if you were not finished. Note that section 1 is a bit bigger than the other sections.
 - We wrap up together at the end of the day. If you finish the section early you can work on the optional exercises in the collaborative document
 
 Please ask for help - do not suffer in silence!
