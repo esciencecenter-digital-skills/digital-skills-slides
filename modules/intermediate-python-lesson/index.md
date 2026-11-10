@@ -3,9 +3,8 @@ id: 3
 category: Intermediate Python
 title: Intermediate Research Software Development in Python
 author: eScience Center
-thumbnail: "good-practices-thumbnail.png"
+thumbnail: "intermediate-python-thumbnail.jpg"
 visibility: visible
 ---
 
-Photo by <a href="https://unsplash.com/@oceancleanupgroup?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">OCG Saving The Ocean</a> on <a href="https://unsplash.com/photos/man-in-blue-t-shirt-and-blue-shorts-playing-soccer-on-beach-during-daytime-psRG_u3DLps?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-
+Photo by <a href="https://unsplash.com/@bluestonex_apphaus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bluestonex</a> on <a href="https://unsplash.com/photos/sticky-notes-with-words-and-drawings-on-wooden-table-gLxNxONfRz0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
