@@ -201,3 +201,28 @@ Follow instructions to configure the selected IDE. 
 </div>
 
 ===
+
+<!-- .slide: data-state="standard 10" -->
+
+# 1.4 Software development using git and GitHub
+
+<img src='./media/image20.png'>
+
+==
+
+<!-- .slide: data-state="standard 10" -->
+
+# Git feature branches
+
+<img src='./media/image22.svg'>
+
+==
+
+<!-- .slide: data-state="standard 10" -->
+
+# 1.4 Instructions
+
+- If you are familiar with git, you may skip the 'Git refresher' sub-section.
+- Follow instructions, running all code chunks (later material depends on some of them).
+
+===
