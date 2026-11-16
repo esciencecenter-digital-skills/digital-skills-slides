@@ -139,3 +139,33 @@ Example:
 - Quickly go over "Our Software Project’s Structure", which we have covered in the presentation.
 
 ===
+
+<!-- .slide: data-state="standard 10" -->
+
+# 1.2 Virtual Environments for Software Development
+
+
+<div style="display: flex; gap: 1em;">
+<div style="flex: 2;">
+  <img src='./media/image16.png'>
+</div>
+<div style="flex: 1;">
+
+Is there anyone who already uses virtual environments?
+
+Why is this useful?
+
+</div>
+</div>
+
+==
+
+<!-- .slide: data-state="standard 10" -->
+
+# 1.2 Instructions
+
+- Go through introductory sub-sections on virtual environments in Python, especially if not familiar with the topic.
+- Follow instructions, which guide you through setup of venv and pip.
+- If you consider yourself experienced on the topic, try out uv.
+
+===
