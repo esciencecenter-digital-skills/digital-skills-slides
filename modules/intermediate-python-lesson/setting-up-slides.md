@@ -1,5 +1,5 @@
 ---
-title: Setting up Environment
+title: Setting Up
 type: slides
 order: 2
 author: Sander van Rijn
@@ -47,7 +47,7 @@ description: "Section 1: Setting Up Environment For Collaborative Code Developme
 
 </style>
 
-# Setting Up Environment For Collaborative Code Development & Intro to Our Software Project
+# Setting Up For Collaborative Code Development
 
 ===
 
@@ -55,18 +55,46 @@ description: "Section 1: Setting Up Environment For Collaborative Code Developme
 
 ## Introduction
 
-In order to develop (write, run, test, debug, backup) code efficiently, you need to use a number of different tools interchangeably ​
+<div class="blockquote-wrapper fragment">
+  <div class="blockquote" style="margin: 30px auto 0; font-size: smaller;">
+      Anyone can write code that a computer can understand. Good programmers write code that humans can understand.
+    <h4>&mdash; Martin Fowler, a British software engineer, author and international speaker on software development</h4>
+  </div>
+</div>
+
+==
+
+<!-- .slide: data-state="standard 10" -->
+
+## Introduction
+
+In order to develop (write, run, test, debug, backup) code efficiently, you need to use a number of different tools interchangeably.
 
 - Introduction to software project and software development tools (refresher)​
   - Command line, IDE, Git + GitHub ​
 - Setting up virtual development environment to isolate code (pip, venv)​
 - Writing and checking for well-formatted and readable code - PEP8 coding style convention & linting​
 
+Note:
+
+In this section, you will familiarise yourself with the software project and learn the tools other members of the team are using. There is a number of tools that are used in conjunction for software development on this project and you need to set them all up on your machine and get used to using them all interchangeably as you would in a real-life team development setting.
+For the purpose of this course, we selected a number of free and open source tools that we believe make a difference:
+- **Command line tools** to run the code, install dependencies and set up a virtual development environment.
+- **PyCharm IDE** - a rich software development environment for developing, testing and debugging code.
+- **Git** to version control our code and GitHub to share it with the team and manage issues, communications and our software as a project.
+These tools are certainly not mandated in practice - you will often in practice have a choice of different similar tools - however for the purpose of this course we had to make a choice and hope that the knowledge you pick on here is transferable to other similar tools you may use in future.
+
+Key message
+- In order to develop (write, test, debug, backup) code efficiently, you need to use a number of different tools interchangeably
+- Which tool is right for you which depends on personal preference or what the community you belong to is using - we only try to cover transferable concepts here
+
+Link to materials: https://softwaresaved.github.io/az-intermediate-software-skills-course/index.html
+
 ===
 
 <!-- .slide: data-state="standard 10" -->
 
-# 1.1 Introduction to our software project
+## 1.1 Introduction to our software project
 
 Patient Inflammation Study Project
 
@@ -76,7 +104,7 @@ Patient Inflammation Study Project
 
 <!-- .slide: data-state="standard 10" -->
 
-# Project structure
+## Project structure
 
 ```
 ├── data
@@ -100,7 +128,7 @@ Patient Inflammation Study Project
 
 <!-- .slide: data-state="standard 10" -->
 
-# Model – View – Controller architecture
+## Model – View – Controller architecture
 
 
 - Model (represents the data)
@@ -123,7 +151,7 @@ Example:
 
 <!-- .slide: data-state="standard 10" -->
 
-# Model – View – Controller architecture
+## Model – View – Controller architecture
 
 - It makes sense to gather functionality that is related to each other in a module and make it clear how modules interact with each other (how they ‘interface’).
 - This makes the code more **modular**, and thereby more **reusable, readable, and manageable**. We will get back to this in section 3.
@@ -133,7 +161,7 @@ Example:
 
 <!-- .slide: data-state="standard 10" -->
 
-# Instructions
+## Instructions
 
 - Follow instructions for "Downloading Our Software Project" (also carry out the exercise)
 - Quickly go over "Our Software Project’s Structure", which we have covered in the presentation.
@@ -142,7 +170,7 @@ Example:
 
 <!-- .slide: data-state="standard 10" -->
 
-# 1.2 Virtual Environments for Software Development
+## 1.2 Virtual Environments for Software Development
 
 
 <div style="display: flex; gap: 1em;">
@@ -162,7 +190,7 @@ Why is this useful?
 
 <!-- .slide: data-state="standard 10" -->
 
-# 1.2 Instructions
+## 1.2 Instructions
 
 - Go through introductory sub-sections on virtual environments in Python, especially if not familiar with the topic.
 - Follow instructions, which guide you through setup of venv and pip.
@@ -172,7 +200,7 @@ Why is this useful?
 
 <!-- .slide: data-state="standard 10" -->
 
-# 1.3 Integrated Developer Environment
+## 1.3 Integrated Developer Environment
 
 - An Integrated Development Environment (IDE) is a very powerful editor that has a lot of useful extra features. 
 - If you do not want to you do not have to leave the environment while programming.
@@ -182,7 +210,7 @@ Why is this useful?
 
 <!-- .slide: data-state="standard 10" -->
 
-# 1.3 Instructions
+## 1.3 Instructions
 
 Pick an IDE:
 - PyCharm: Python-oriented, free community edition (free pro versions for educational institutions).
@@ -203,7 +231,7 @@ Follow instructions to configure the selected IDE. 
 
 <!-- .slide: data-state="standard 10" -->
 
-# 1.4 Software development using git and GitHub
+## 1.4 Software development using git and GitHub
 
 <img src='./media/image20.png'>
 
@@ -211,7 +239,7 @@ Follow instructions to configure the selected IDE. 
 
 <!-- .slide: data-state="standard 10" -->
 
-# Git feature branches
+## Git feature branches
 
 <img src='./media/image22.svg'>
 
@@ -219,7 +247,7 @@ Follow instructions to configure the selected IDE. 
 
 <!-- .slide: data-state="standard 10" -->
 
-# 1.4 Instructions
+## 1.4 Instructions
 
 - If you are familiar with git, you may skip the 'Git refresher' sub-section.
 - Follow instructions, running all code chunks (later material depends on some of them).
@@ -228,7 +256,7 @@ Follow instructions to configure the selected IDE. 
 
 <!-- .slide: data-state="standard 10" -->
 
-# 1.5 Python code style conventions
+## 1.5 Python code style conventions
 
 Which is more readable?
 
@@ -245,7 +273,7 @@ Which is more readable?
 
 <!-- .slide: data-state="standard 10" -->
 
-# 1.5 Instructions
+## 1.5 Instructions
 
 - Mainly descriptive episode, the two exercises are the 'active' parts.
 - Strongly linked to following episode.
@@ -254,7 +282,7 @@ Which is more readable?
 
 <!-- .slide: data-state="standard 10" -->
 
-# 1.6 Verifying Code Style Using Linters
+## 1.6 Verifying Code Style Using Linters
 
 - Code linter: identify style issues and (basic) errors via static code analysis.
 - Linters show issues in a report-style.
