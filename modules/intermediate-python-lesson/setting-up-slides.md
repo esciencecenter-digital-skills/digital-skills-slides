@@ -190,7 +190,6 @@ Pick an IDE:
 
 Follow instructions to configure the selected IDE. 
 
-
 <div style="display: flex; gap: 1em;">
 <div style="flex: 1;">
   <img src='./media/image17.png'>
@@ -224,5 +223,31 @@ Follow instructions to configure the selected IDE. 
 
 - If you are familiar with git, you may skip the 'Git refresher' sub-section.
 - Follow instructions, running all code chunks (later material depends on some of them).
+
+===
+
+<!-- .slide: data-state="standard 10" -->
+
+# 1.5 Python code style conventions
+
+Which is more readable?
+
+<div style="display: flex; gap: 1em;">
+<div style="flex: 1;">
+  <img src='./media/image23.png'>
+</div>
+<div style="flex: 1;">
+  <img src='./media/image24.png'>
+</div>
+</div>
+
+==
+
+<!-- .slide: data-state="standard 10" -->
+
+# 1.5 Instructions
+
+- Mainly descriptive episode, the two exercises are the 'active' parts.
+- Strongly linked to following episode.
 
 ===
