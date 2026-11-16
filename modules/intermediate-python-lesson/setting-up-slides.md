@@ -251,3 +251,13 @@ Which is more readable?
 - Strongly linked to following episode.
 
 ===
+
+<!-- .slide: data-state="standard 10" -->
+
+# 1.6 Verifying Code Style Using Linters
+
+- Code linter: identify style issues and (basic) errors via static code analysis.
+- Linters show issues in a report-style.
+- Many tools for the job – here we will have a look at Ruff.
+
+===
