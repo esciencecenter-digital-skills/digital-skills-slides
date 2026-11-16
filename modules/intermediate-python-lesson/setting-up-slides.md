@@ -169,3 +169,35 @@ Why is this useful?
 - If you consider yourself experienced on the topic, try out uv.
 
 ===
+
+<!-- .slide: data-state="standard 10" -->
+
+# 1.3 Integrated Developer Environment
+
+- An Integrated Development Environment (IDE) is a very powerful editor that has a lot of useful extra features. 
+- If you do not want to you do not have to leave the environment while programming.
+- What do you use? And why?
+
+==
+
+<!-- .slide: data-state="standard 10" -->
+
+# 1.3 Instructions
+
+Pick an IDE:
+- PyCharm: Python-oriented, free community edition (free pro versions for educational institutions).
+- Visual Studio Code (VS Code): free general-purpose IDE.
+
+Follow instructions to configure the selected IDE. 
+
+
+<div style="display: flex; gap: 1em;">
+<div style="flex: 1;">
+  <img src='./media/image17.png'>
+</div>
+<div style="flex: 1;">
+  <img src='./media/image19.png'>
+</div>
+</div>
+
+===
