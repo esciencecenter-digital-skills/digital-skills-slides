@@ -131,7 +131,11 @@ Requirements will <i>almost always</i> change on reflection!
 
 <img src='./media/image33.png'>
 
-==
+Note:
+
+Image from: https://blog.stackademic.com/understanding-lean-startup-and-agile-development-c42677a95d03
+
+===
 
 <!-- .slide: data-state="standard 10" -->
 
@@ -182,4 +186,116 @@ These three levels can be named 'business', 'user, and 'solution', requirements
 
 ===
 
+<!-- .slide: data-state="standard 10" -->
 
+## 3.2 Software Architecture and Design
+
+- Software/System Architecture
+  - How do components interact?
+- UI/UX
+  - How do users interact with the software?
+- Algorithm Design
+  - How to solve the core research/business problem?
+
+Note:
+
+Now we have (some version of) the requirements in place, the next step is designing before we can get to implementation.
+
+Software can be designed at very different levels. Just like buildings, where an architect designs the overall shape in collaboration with engineers to make sure the available materials can actually support it, all the way down to an interior designer who lays out the exact details of which pieces of furniture go where.
+
+You can consider many aspects of design, but here are three common ones:
+
+** click to reveal Architecture **
+
+Architecture is the high-level design. Which (large) components does your software currently consist of, which ones will have to be added, changed or removed? And not just considering your own software, but also the wider system around it: which other software does your software interact with? Web APIs are commonly a part of this.
+
+Think back to the "Model-View-Controller" architecture you encountered earlier. It's a way of splitting up the responsibilities of your program into separate components so we can think about their interaction at a higher level. This can be helpful, but will have its limits. No separation will ever be perfect, and certain functionality can be argued to be part of different components in the same software. There's a lot of examples with specific terminology that you can choose from if you want. It's good to be aware of common patterns: they usually appeared after many hard lessons have been learned. But don't feel to stuck by them, it should **help** your efforts in creating the code, not hold you back.
+
+** click to reveal UI/UX **
+
+The User Interface or User eXperience is also subject to design. Think about clunky apps or websites, or completely losing track of how to do things when software you use frequently ( *cough* MS Teams *cough*) decides to change things? If there is a preferred order of things, make sure that's easy for your users! They don't have to follow the structure of your code when interacting.
+
+** click to reveal Algorithm Design **
+
+Now we're almost getting to the meat of things: which algorithms and data structures will we actually use to solve the problem we identified in the requirements? Don't forget your (non-)functional user requirements here. The space-time trade-off is commonly made here depending on your restrictions: should it be fast and do you have the space to pre-compute and memorize, or is your memory limited and is a bit of extra time not a problem?
+
+Again, these are just common examples of what to think of when designing.
+
+==
+
+<!-- .slide: data-state="standard 10" -->
+
+## Good Code
+
+<div style="display: flex; gap: 1em; font-size: smaller;">
+  <div class="fragment" data-fragment-index="1">
+    <div class="blockquote" style="margin: 30px auto 0; font-size: smaller;">
+        … is readable, understandable, covered by automated tests, not over complicated and does well what is intended to do
+      <h4>&mdash; Intent HQ blog</h4>
+    </div>
+  </div>
+  <div style="flex: 1;" class="fragment" data-fragment-index="2">
+    <img src='./media/image34.jpeg'>
+  </div>
+</div>
+
+Note:
+
+blog: https://intenthq.com/writing/what-is-good-code-a-scientific-definition
+
+The point of spending all this time designing our code, is to make sure we produce "good code" in the end. The following quote sums it up quite nicely:
+
+** click to reveal quote ** 
+
+Readability and understandability goes all the way from using sensible variable names, to how you've chosen to construct your software in terms of components. The logic should be easy to see, and should make sense when explained.
+
+Having code be testable / tested means you have some guarantee that it actually does what it's supposed to do, and also means the behavior of your components is defined well enough that you can check it.
+
+Together, this makes code **maintainable**. In short: that you won't dread having to go back to your code in a few months time if you have to find and fix a bug, or extend it to support new functionality.
+
+==
+
+<!-- .slide: data-state="standard 10" -->
+
+## Finding balance
+
+<div style="display: flex; gap: 1em; font-size: smaller;">
+  <div style="flex: 1;" class="fragment" data-fragment-index="1">
+    
+  - Under-design
+  - Technical Debt
+
+  </div>
+  <div style="flex: 2;" class="fragment" data-fragment-index="1">
+    <img src='./media/image35.jpeg'>
+  </div>
+  <div style="flex: 1;" class="fragment" data-fragment-index="1">
+  
+  - Over-design
+  - Overhead
+
+  </div>
+</div>
+
+Note:
+
+Okay, so now we've covered what aspects go into designing software, and what you should pay attention to when doing so. So when we do decide we've designed enough? When are we done with preparing, and can we actually start coding?!
+
+** click to reveal image **
+
+There is no fixed answer here, it's all a balancing act you will have to experience for yourself
+
+** click to reveal under-design/tech debt **
+
+The whole point of designing is not to under-design, we want to avoid technical debt!
+
+For those unfamiliar with the term "technical debt": it is basically a shorthand for work that has to be done on refactoring/redesigning code before it becomes possible to expand it with new features. It's usually caused by under-designing and rushing implementations, choosing quick fixes over steady improvements.
+It's referred to as 'debt' because by choosing those quick fixes, you're effectively "borrowing" time from the future with interest: by not spending the time designing now, you can get your feature out faster, but that lack of design will come back for you later, when it's even harder to fix because more stuff has been added, and you need extra time to get re-acquainted with the context.
+
+You could compare it to choosing not to do the dishes right after dinner, but doing it the next day instead: You gain the free time now, but tomorrow you still have to do it, and now it's all gotten stuck and is even harder to clean.
+
+** click to reveal over-design **
+
+The flip-side is over-designing: in the extreme case, you'd just keep designing and never get to coding, which isn't the point either. At least, the more important, larger, or more long-lived your software will be, the more time it makes sense to spend on designing. After all, the point of designing is to prevent mistakes. In small or short-lived software, there's a lot less that **can** even go wrong, than in a larger project.
+
+===
