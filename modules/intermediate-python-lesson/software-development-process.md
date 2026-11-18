@@ -407,3 +407,183 @@ Sounds familiar?
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
 ===
+
+<!-- .slide: data-state="standard 10" -->
+
+## 3.4 Code Refactoring
+
+Improving the structure of the code, without altering its function.
+
+How can we ensure that the code still works after refactoring?
+
+==
+
+<!-- .slide: data-state="standard 10" -->
+
+## 3.4 Pure vs Impure functions
+
+Pure functions are easy to read, write, test and maintain, because they have no _side effects_:
+
+- Perform an action
+- Leave input unchanged
+
+Need to change something? Return a changed copy!
+
+==
+
+<!-- .slide: data-state="standard 10" -->
+
+## Example: Impure functions
+
+<img src='./media/image40.png'>
+
+<!--
+
+```python
+def shop_at_Albert_Heijn(shopping_list: list[str]) -> float:
+    """Returns cost of shopping at Albert Heijn"""
+    ...
+
+def shop_at_Kruitvat(shopping_list: list[str]) -> float:
+    """Returns cost of shopping at Kruitvat"""
+    ...
+
+shopping_list = ["Cheese", "Tea", "Pasta", "Paracetamol"]
+
+cost = shop_at_Kruitvat(shopping_list)
+print(shopping_list)
+
+cost += shop_at_Albert_Heijn(shopping_list)
+print(shopping_list)
+
+-->
+
+Note:
+
+Here is an example of an impure function in use: We have two functions `shop_at_Albert_Heijn` and `shop_at_Kruidvat` that calculate the price of buying products from a shopping list at their stores.
+Kruidvat sells tea and paracetamol, but does not sell cheese or pasta, so we will have to buy those products at Albert Heijn using the second function.
+
+These functions work just like how you would use a shopping list in person: once you've bought a product, that product is crossed out or removed from your list.
+
+==
+
+<!-- .slide: data-state="standard 10" -->
+
+## Example: Impure functions
+
+<img src='./media/image41.png'>
+
+<!--
+
+```python
+def shop_at_Albert_Heijn(shopping_list: list[str]) -> float:
+    """Returns cost of shopping at Albert Heijn"""
+    ...
+
+def shop_at_Kruitvat(shopping_list: list[str]) -> float:
+    """Returns cost of shopping at Kruitvat"""
+    ...
+
+shopping_list = ["Cheese", "Tea", "Pasta", "Paracetamol"]
+
+cost = shop_at_Kruitvat(shopping_list)
+print(shopping_list)
+# ["Cheese", "Pasta"]
+
+cost += shop_at_Albert_Heijn(shopping_list)
+print(shopping_list)
+# []
+
+-->
+
+Note:
+
+As you can see, the tea and paracetamol have now been removed from the shopping list.
+This means that when using the same `shopping_list` variable, we only end up buying cheese and pasta at Albert Heijn instead of the full list.
+In this case that is the intended behavior of the programmer, but it does make the function harder to use generically, harder to document and harder to test.
+For example, we can't easily re-use the same shopping list to check which order of shopping would be cheaper: our shopping list is empty after calling both for the first time, and in this case we don't have a copy of the original anymore.
+
+In short, a pure function should always return the same output for the same input, and should not change anything outside itself.
+This also means it should be independent of any other local/global variables that may be around.
+By writing our functions this way, they usually become easier to work with, and especially to test: there will never be any (unexpected) dependencies on other tests or state.
+
+==
+
+<!-- .slide: data-state="standard 10" -->
+
+## Example: Pure functions
+
+<img src='./media/image42.png'>
+
+<!--
+
+```python
+def shop_at_Albert_Heijn(shopping_list: list[str]) -> list[str]:
+    """Returns items available at Albert Heijn"""
+    ...
+
+def shop_at_Kruitvat(shopping_list: list[str]) -> list[str]:
+    """Returns items available at Kruitvat"""
+    ...
+
+shopping_list = ["Cheese", "Tea", "Pasta", "Paracetamol"]
+
+print(shop_at_Kruitvat(shopping_list))
+print(shopping_list)
+
+
+print(shop_at_Albert_Heijn(shopping_list))
+print(shopping_list)
+
+
+-->
+
+Note:
+
+How might we rewrite this to be pure functions?
+One way could be to first create a function that returns a new list with only those items available at that store
+
+==
+
+<!-- .slide: data-state="standard 10" -->
+
+## Example: Pure functions
+
+<img src='./media/image43.png'>
+
+<!--
+
+```python
+def shop_at_Albert_Heijn(shopping_list: list[str]) -> list[str]:
+    """Returns items available at Albert Heijn"""
+    ...
+
+def shop_at_Kruitvat(shopping_list: list[str]) -> list[str]:
+    """Returns items available at Kruitvat"""
+    ...
+
+shopping_list = ["Cheese", "Tea", "Pasta", "Paracetamol"]
+
+print(shop_at_Kruitvat(shopping_list))  # ["Tea", "Paracetamol"]
+print(shopping_list)
+# ["Cheese", "Tea", "Pasta", "Paracetamol"]
+
+print(shop_at_Albert_Heijn(shopping_list))  # ["Cheese", "Tea", "Pasta", "Paracetamol"]
+print(shopping_list)
+# ["Cheese", "Tea", "Pasta", "Paracetamol"]
+
+-->
+
+Note:
+
+With these new functions, our original shopping list is unchanged.
+We could then write separate functions that calculate the price for certain items at a certain store.
+Those can then be combined in another function that takes care of buying things from the shopping list in order so we don't buy anything twice.
+Note that this is just an example/suggestion, and other/better ways of structuring functionality might be possible
+
+However we end up **refactoring** the original implementation, while it might be a bit more work to separate out the functions like this, we do end up with functions that are smaller, do a single clear thing and are much easier to test.
+
+The concept of only programming with such pure functions is a paradigm called _functional programming_, and is one of several programming paradigms that Python supports.
+(Other paradigms can include procedural and object oriented programming)
+
+===
