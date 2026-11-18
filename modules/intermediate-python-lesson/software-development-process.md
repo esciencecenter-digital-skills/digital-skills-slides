@@ -261,7 +261,7 @@ Together, this makes code **maintainable**. In short: that you won't dread havin
 
 <div style="display: flex; gap: 1em; font-size: smaller;">
   <div style="flex: 1;" class="fragment" data-fragment-index="1">
-    
+
   - Under-design
   - Technical Debt
 
@@ -270,7 +270,7 @@ Together, this makes code **maintainable**. In short: that you won't dread havin
     <img src='./media/image35.jpeg'>
   </div>
   <div style="flex: 1;" class="fragment" data-fragment-index="1">
-  
+
   - Over-design
   - Overhead
 
@@ -297,5 +297,113 @@ You could compare it to choosing not to do the dishes right after dinner, but do
 ** click to reveal over-design **
 
 The flip-side is over-designing: in the extreme case, you'd just keep designing and never get to coding, which isn't the point either. At least, the more important, larger, or more long-lived your software will be, the more time it makes sense to spend on designing. After all, the point of designing is to prevent mistakes. In small or short-lived software, there's a lot less that **can** even go wrong, than in a larger project.
+
+===
+
+<!-- .slide: data-state="standard 10" -->
+
+## 6 Techniques for Good Software Design
+
+Episode 3.3
+- Code Abstraction
+- Code Decoupling
+- Encapsulation
+- Polymorphism
+
+Episode 3.4
+- Code Refactoring
+- Pure Functions
+
+===
+
+<!-- .slide: data-state="standard 10" -->
+
+## 3.3 Code Abstraction
+
+<div style="display: flex; gap: 1em; font-size: smaller;">
+  <div style="flex: 1;">
+
+    Details of ‘how’ something works are hidden. You only deal with ‘what’ the code does.
+
+    You (or a user of your code) only need to understand the higher level of abstraction and not the details.
+
+  </div>
+  <div style="flex: 1;">
+    <img src='./media/image36.png'>
+  </div>
+</div>
+
+==
+
+<!-- .slide: data-state="standard 10" -->
+
+## 3.3 Code Decoupling
+
+<div style="display: flex; gap: 1em; font-size: smaller;">
+  <div style="flex: 1;">
+
+    Breaking up software in smaller components to reduce the interdependence.
+
+    A change in one component does not necessitate a change in the other.
+
+    Clear interface between components
+
+  </div>
+  <div style="flex: 1;">
+    <img src='./media/image37.png'>
+  </div>
+</div>
+
+==
+
+<!-- .slide: data-state="standard 10" -->
+
+## 3.3 Encapsulation
+
+<div style="display: flex; gap: 1em; font-size: smaller;">
+  <div style="flex: 1;">
+
+    Packing data and functions operating on it in a single component.
+
+    In Python you can group together data and methods in a class. An instance of a class is called an object.
+
+  </div>
+  <div style="flex: 1;">
+    <img src='./media/image38.png'>
+  </div>
+</div>
+
+==
+
+<!-- .slide: data-state="standard 10" -->
+
+## 3.3 Polymorphism
+
+<div style="display: flex; gap: 1em; font-size: smaller;">
+  <div style="flex: 1;">
+
+    Having multiple implementations/shapes of the same abstract concept
+
+  </div>
+  <div style="flex: 1;">
+    <img src='./media/image39.png'>
+  </div>
+</div>
+
+==
+
+<!-- .slide: data-state="standard 10" -->
+
+## 3.3 Testing with Mocks
+
+- When writing tests for some functionality, you want to depend on as little other functionality
+- A _mock_ is an object for which you define just enough behavior so it can take the place of a different object in your tests
+
+Sounds familiar?
+<!-- .element: class="fragment" data-fragment-index="2" -->
+
+- Concept has been encapsulated
+- Implementation has been abstracted
+<!-- .element: class="fragment" data-fragment-index="3" -->
 
 ===
