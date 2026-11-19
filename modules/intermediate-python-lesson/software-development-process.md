@@ -8,6 +8,14 @@ description: "Section 3: Software Development as a Process"
 
 <!-- .slide: data-state="title" -->
 
+<link rel="stylesheet" href="dist/plugin/highlight/monokai.css" />
+<script src="dist/plugin/highlight.js"></script>
+<script>
+  Reveal.initialize({
+    plugins: [RevealHighlight],
+  });
+</script>
+
 <style>
 
 /* Blockquote main style */
@@ -53,25 +61,13 @@ description: "Section 3: Software Development as a Process"
 
 <!-- .slide: data-state="standard 10" -->
 
-## Programming vs Software Engineering
+## Programming VS Software Engineering
 
 <div class="blockquote-wrapper fragment">
   <div class="blockquote" style="margin: 30px auto 0; font-size: smaller;">
     Software designed deliberately will be much easier to work with in the long term than software we build without a plan - time spent planning in advance will save you a lot more time later.
   </div>
 </div>
-
-==
-
-<!-- .slide: data-state="standard 10" -->
-
-## Programming vs Software Engineering
-
-Software requirements, design, architecture and implementation as typical stages of a software development process
-- Design requirements and constraints - what affects our design choices?
-- Software design	
-- Writing readable, maintainable and testable code
-- Pure functions, classes and abstractions
 
 Note:
 
@@ -81,11 +77,22 @@ Who will (or may) be involved: software is written for stakeholders. This may on
 Software (or code) is an asset: software inherently contains value - for example, in terms of what it can do, the lessons learned throughout its development, and as an implementation of a research approach (i.e. a particular research algorithm, process, or technical approach).
 As an asset, it could be reused: again, it may not be evident initially that the software will have use beyond its initial purpose or project, but there is an assumption that the software - or even just a part of it - could be reused in the future.
 
+<!-- This seems to be a bit of an overview slide, but I don't feel it serves much purpose. -Sander
+==
+
+## Programming vs Software Engineering
+
+Software requirements, design, architecture and implementation as typical stages of a software development process
+- Design requirements and constraints - what affects our design choices?
+- Software design	
+- Writing readable, maintainable and testable code
+- Pure functions, classes and abstractions
+
+ -->
+
 ===
 
 <!-- .slide: data-state="standard 10" -->
-
-## Waterfall Software Development
 
 <img src='./media/image32.jpeg'>
 
@@ -120,6 +127,8 @@ After all, the sooner you can correct or avoid a mistake, the cheaper it is.
 <!-- .slide: data-state="standard 10" -->
 
 <h2>Software development as a <i>continuous</i> process
+
+<br><br> <!-- Adding vertical space -->
 
 <div style="font-size: smaller;">
 Requirements will <i>almost always</i> change on reflection!
@@ -190,12 +199,22 @@ These three levels can be named 'business', 'user, and 'solution', requirements
 
 ## 3.2 Software Architecture and Design
 
-- Software/System Architecture
-  - How do components interact?
-- UI/UX
-  - How do users interact with the software?
-- Algorithm Design
-  - How to solve the core research/business problem?
+<ul>
+  <div class="fragment" data-fragment-index="1">
+    <li>Software/System Architecture
+    <ul><li>How do components interact?</ul>
+  </div>
+  <br>
+  <div class="fragment" data-fragment-index="2">
+    <li>UI/UX
+    <ul><li>How do users interact with the software?</ul>
+  </div>
+  <br>
+  <div class="fragment" data-fragment-index="3">
+    <li>Algorithm Design
+    <ul><li>How to solve the core research/business problem?</ul>
+  </div>
+</ul>
 
 Note:
 
@@ -205,17 +224,17 @@ Software can be designed at very different levels. Just like buildings, where an
 
 You can consider many aspects of design, but here are three common ones:
 
-** click to reveal Architecture **
+** reveal Architecture **
 
 Architecture is the high-level design. Which (large) components does your software currently consist of, which ones will have to be added, changed or removed? And not just considering your own software, but also the wider system around it: which other software does your software interact with? Web APIs are commonly a part of this.
 
 Think back to the "Model-View-Controller" architecture you encountered earlier. It's a way of splitting up the responsibilities of your program into separate components so we can think about their interaction at a higher level. This can be helpful, but will have its limits. No separation will ever be perfect, and certain functionality can be argued to be part of different components in the same software. There's a lot of examples with specific terminology that you can choose from if you want. It's good to be aware of common patterns: they usually appeared after many hard lessons have been learned. But don't feel to stuck by them, it should **help** your efforts in creating the code, not hold you back.
 
-** click to reveal UI/UX **
+** reveal UI/UX **
 
 The User Interface or User eXperience is also subject to design. Think about clunky apps or websites, or completely losing track of how to do things when software you use frequently ( *cough* MS Teams *cough*) decides to change things? If there is a preferred order of things, make sure that's easy for your users! They don't have to follow the structure of your code when interacting.
 
-** click to reveal Algorithm Design **
+** reveal Algorithm Design **
 
 Now we're almost getting to the meat of things: which algorithms and data structures will we actually use to solve the problem we identified in the requirements? Don't forget your (non-)functional user requirements here. The space-time trade-off is commonly made here depending on your restrictions: should it be fast and do you have the space to pre-compute and memorize, or is your memory limited and is a bit of extra time not a problem?
 
@@ -260,7 +279,7 @@ Together, this makes code **maintainable**. In short: that you won't dread havin
 ## Finding balance
 
 <div style="display: flex; gap: 1em; font-size: smaller;">
-  <div style="flex: 1;" class="fragment" data-fragment-index="1">
+  <div style="flex: 1;" class="fragment" data-fragment-index="3">
 
   - Under-design
   - Technical Debt
@@ -269,7 +288,7 @@ Together, this makes code **maintainable**. In short: that you won't dread havin
   <div style="flex: 2;" class="fragment" data-fragment-index="1">
     <img src='./media/image35.jpeg'>
   </div>
-  <div style="flex: 1;" class="fragment" data-fragment-index="1">
+  <div style="flex: 1;" class="fragment" data-fragment-index="2">
 
   - Over-design
   - Overhead
@@ -323,9 +342,9 @@ Episode 3.4
 <div style="display: flex; gap: 1em; font-size: smaller;">
   <div style="flex: 1;">
 
-    Details of ‘how’ something works are hidden. You only deal with ‘what’ the code does.
+Details of ‘how’ something works are hidden. You only deal with ‘what’ the code does.
 
-    You (or a user of your code) only need to understand the higher level of abstraction and not the details.
+You (or a user of your code) only need to understand the higher level of abstraction and not the details.
 
   </div>
   <div style="flex: 1;">
@@ -342,11 +361,11 @@ Episode 3.4
 <div style="display: flex; gap: 1em; font-size: smaller;">
   <div style="flex: 1;">
 
-    Breaking up software in smaller components to reduce the interdependence.
+Breaking up software in smaller components to reduce the interdependence.
 
-    A change in one component does not necessitate a change in the other.
+A change in one component does not necessitate a change in the other.
 
-    Clear interface between components
+Clear interface between components
 
   </div>
   <div style="flex: 1;">
@@ -363,15 +382,28 @@ Episode 3.4
 <div style="display: flex; gap: 1em; font-size: smaller;">
   <div style="flex: 1;">
 
-    Packing data and functions operating on it in a single component.
+Packing data and functions operating on it in a single component.
 
-    In Python you can group together data and methods in a class. An instance of a class is called an object.
+In Python you can group together data and methods in a class. An instance of a class is called an object.
 
   </div>
   <div style="flex: 1;">
     <img src='./media/image38.png'>
   </div>
 </div>
+
+<!-- 
+```python
+import math
+
+class Circle:
+    ...
+    def get_area(self):
+        return math.pi * self.radius * self.radius
+...
+print(my_circle.get_area())
+```
+ -->
 
 ==
 
@@ -382,7 +414,7 @@ Episode 3.4
 <div style="display: flex; gap: 1em; font-size: smaller;">
   <div style="flex: 1;">
 
-    Having multiple implementations/shapes of the same abstract concept
+Having multiple implementations/shapes of the same abstract concept
 
   </div>
   <div style="flex: 1;">
@@ -403,6 +435,7 @@ Sounds familiar?
 <!-- .element: class="fragment" data-fragment-index="2" -->
 
 - Concept has been encapsulated
+<!-- .element: class="fragment" data-fragment-index="3" -->
 - Implementation has been abstracted
 <!-- .element: class="fragment" data-fragment-index="3" -->
 
@@ -415,6 +448,15 @@ Sounds familiar?
 Improving the structure of the code, without altering its function.
 
 How can we ensure that the code still works after refactoring?
+
+Note:
+
+Inevitably, at some point you'll encounter code that is not designed as you'd want it to.
+Whether not deliberately designed in the first place, or the latest requirements just no longer matching the previous design. That's just a natural part of iterative software development.
+
+Refactoring is the process of redesigning existing code. If done at the same time as adding new functionality, any newly introduced bugs will be very hard to solve. Instead, it's easier to keep the functionality constant first, and then add the new feature later.
+
+Wanting to keep the functionality constant, how do we ensure this is the case after our refactor? If you think back to the previous section, we've already discussed the ideal tool for this: tests! If our code is well tested, any change in functionality should fail at least one test. So if we redesigned the code and our tests still pass, we can be fairly sure that it still works just like before. Except now it will be easier to add the new feature we were considering.
 
 ==
 
@@ -455,6 +497,7 @@ print(shopping_list)
 
 cost += shop_at_Albert_Heijn(shopping_list)
 print(shopping_list)
+```
 
 -->
 
@@ -493,6 +536,7 @@ print(shopping_list)
 cost += shop_at_Albert_Heijn(shopping_list)
 print(shopping_list)
 # []
+```
 
 -->
 
@@ -534,7 +578,7 @@ print(shopping_list)
 
 print(shop_at_Albert_Heijn(shopping_list))
 print(shopping_list)
-
+```
 
 -->
 
@@ -571,6 +615,7 @@ print(shopping_list)
 print(shop_at_Albert_Heijn(shopping_list))  # ["Cheese", "Tea", "Pasta", "Paracetamol"]
 print(shopping_list)
 # ["Cheese", "Tea", "Pasta", "Paracetamol"]
+```
 
 -->
 
