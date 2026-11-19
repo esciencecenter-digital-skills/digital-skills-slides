@@ -63,24 +63,45 @@ description: Introduction to the Intermediate Research Software Development in P
 
 <!-- .slide: data-state="standard 10" -->
 
-## Modern research is impossible without software
+## Modern research relies on software
 
 <img src='./media/image9.png'>
+<br>
 
-From thrown-together scripts, through an abundance of complex spreadsheets, to the millions of lines of code behind large-scale infrastructure, there are few areas where software does not play a fundamental part in research
+- Quick scripts
+- Complex spreadsheets
+- Large-scale infrastructure
 
-===
+Software plays a fundamental part in most research!
+
+==
 
 <!-- .slide: data-state="standard 10" -->
 
 ## The software you write is important!
 
+Software inherently contains <i>value</i>, not a throw-away artifact
+
+<br>
+
+Can/should it be reusable by others? ...including yourself?
+
+Note:
+
+If you've spent any time at all writing software, at the very least it contains the value of the time you put into it. Furthermore, it represents the research or process you've encoded into it, and the experience you've gained by writing it.
+
+Wouldn't it make sense to not throw that value away?
+
+==
+
+<!-- .slide: data-state="standard 10" -->
+
+## Reusability
+
 <div style="display: flex; gap: 1em;">
-<div style="flex: 2;">
+<div style="flex: 3;">
 <ul>
-  <li>Software inherently contains <i>value</i>, not a throw-away artifact
-  <br>
-  <li>Difficult to gauge to what extent it might be used in the future
+  <li>Amount of reuse is hard to predict
   <ul>
     <li>By whom?
     <li>Which parts?
@@ -89,14 +110,16 @@ From thrown-together scripts, through an abundance of complex spreadsheets, to t
   </ul>
 </ul>
 </div>
-<div style="flex: 1;">
+<div style="flex: 2;">
   <img src='./media/image11.png'>
 </div>
 </div>
 
-<div>
-Can/should it be reusable by others? ...including yourself?
-</div>
+Note:
+
+A lot of widely used software started out as someone's personal project. While most quick scripts won't grow into the next numpy or pandas, if your software proves useful to others, the amount and breadth of users may well grow over time.
+
+Do you think such growth is more or less likely if the code is hard to reuse?
 
 ===
 
@@ -119,20 +142,21 @@ Can/should it be reusable by others? ...including yourself?
 
 <!-- .slide: data-state="standard 10" -->
 
-## Programming vs Software Engineering
+<!-- Some vertical space to have the lists not be at the top of the slide -->
+<br>
 
 <div style="display: flex; gap: 1em; font-size: smaller;">
 <div style="flex: 1;">
-  <b>Programming / Coding</b>
+  <h3>Programming / Coding</h3>
   <ul>
-    <li>Focus is one aspect of software development (implementation)
+    <li>Focus is on implementation
     <li>Writes software for themselves
     <li>Mostly an individual activity
     <li>Writes software to fulfill research goals (ideally from a design)
   </ul>
 </div>
 <div style="flex: 1;">
-  <b>Engineering</b>
+  <h3>Engineering</h3>
   <ul>
     <li>Considers the <i>lifecycle</i> of software
     <li>Writes software for <i>stakeholders</i>
@@ -150,6 +174,7 @@ Can/should it be reusable by others? ...including yourself?
 </div>
 
 Note:
+
 What's the difference between programming and software engineering?
 
 ===
