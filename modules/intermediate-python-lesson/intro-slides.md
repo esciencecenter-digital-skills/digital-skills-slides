@@ -206,15 +206,15 @@ A researcher developer, with foundational coding skills, now facing new challeng
 <div style="font-size: smaller;">
 
 1. Environment for Collaborative Code Development
-   - Setting up our software project, development environments and tools, virtual environments, Git & GitHub, coding conventions
+   - Project setup, IDEs, virtual environments, Git(Hub), style conventions
 2. Ensuring Correctness of Software at Scale
-   - Automatically testing your software, unit tests, continuous integration, debugging, improving code robustness
+   - Automatic testing, unit tests, continuous integration, debugging
 3. Software Development as a Process
-   - Software requirements, design, architecture and implementation (via programming paradigms) as typical stages of a software development process
+   - Software development process: requirements, design, architecture and implementation (via programming paradigms)
 4. Collaborative Software Development for Reuse
-   - Code review, documenting and preparing/packaging software for release and reuse
+   - Code review, documenting and preparing/packaging software for reuse
 5. Managing and Improving Software Over Its Lifetime
-   - Tracking issues, managing team communications and software project planning and management
+   - Tracking issues, managing communication and project planning
 
 </div>
 
@@ -258,7 +258,7 @@ About working through the material
 Please ask for help - do not suffer in silence!
 
 - Ask for help if needed
-- We know from experience that some people don't like to read, especially not at the end of the day when you feel like everyone else is moving faster than you. Ask an instructor to explain instead of reading the texts!
+- We know from experience that it can be hard to stay focussed at the end of the day, especially if you feel like everyone else is moving faster than you. Ask an instructor to help instead of getting stuck!
 
 </div>
 
@@ -270,7 +270,7 @@ Please ask for help - do not suffer in silence!
 
 <div style="display: flex; gap: 1em;">
 <div style="flex: 2;">
-  You have just joined a team that works on an existing software project. The project is written in Python and studies and analyses inflammation in a group of patients that have been given a new treatment for arthritis in a medical trial. The software project is not finished and contains some bugs and tests that are failing. Over the course - you will work either individually or with your colleagues to develop more code and fix these errors.
+  You have just joined a team that works on an existing software project. The project is written in Python and studies and analyses inflammation in a group of patients that have been given a new treatment for arthritis in a medical trial. The software project is not finished and contains some bugs and tests that are failing. Over the course you will work either individually or with your colleagues to develop more code and fix these errors.
 </div>
 <div style="flex: 1;">
   <img src="./media/image13.jpg">
