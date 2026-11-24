@@ -139,13 +139,18 @@ Patient Inflammation Study Project
 
 Example:
 <!-- .element: class="fragment" data-fragment-index="2" -->
-- I click on ‘summary of inflammation study results for these 10 patients’ (View)
-- Controller accepts this input and asks Model for the appropriate data
+- In View, click "summary of results for these 10 patients"
+- Controller accepts input and asks Model for appropriate data
 - Model retrieves the data and sends it to Controller
 - Controller analyses the data and sends it to View
 - View presents the results
 
 <!-- .element: class="fragment" data-fragment-index="2" -->
+
+Note:
+
+The current project does not actually have a clickable GUI.
+For the listed example, just pretend that it does.
 
 ==
 
@@ -154,6 +159,7 @@ Example:
 ## Model – View – Controller architecture
 
 - It makes sense to gather functionality that is related to each other in a module and make it clear how modules interact with each other (how they ‘interface’).
+
 - This makes the code more **modular**, and thereby more **reusable, readable, and manageable**. We will get back to this in section 3.
 
 
@@ -180,8 +186,10 @@ Example:
 <div style="flex: 1;">
 
 Is there anyone who already uses virtual environments?
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
 Why is this useful?
+<!-- .element: class="fragment" data-fragment-index="2" -->
 
 </div>
 </div>
@@ -194,7 +202,12 @@ Why is this useful?
 
 - Go through introductory sub-sections on virtual environments in Python, especially if not familiar with the topic.
 - Follow instructions, which guide you through setup of venv and pip.
-- If you consider yourself experienced on the topic, try out uv.
+- If you consider yourself experienced on the topic, try out `uv`.
+
+Note:
+
+[`uv`](https://docs.astral.sh/uv/) by Astral is a project management tool for Python. It is written in Rust for performance.
+It provides a re-implementation of pip, but can also be used as a standalone project/package management tool that can even install Python itself for you.
 
 ===
 
