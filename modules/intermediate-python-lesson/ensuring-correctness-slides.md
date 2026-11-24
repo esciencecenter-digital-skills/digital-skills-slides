@@ -55,7 +55,9 @@ description: "Section 2: Ensuring Correctness of Software at Scale​"
 
 ## Introduction
 
-As researchers we need to be able to verify and demonstrate that our code produces correct results, and unit testing - when done in the right way - can help, as well as save us development time in the long run
+As researchers we need to be able to verify and demonstrate that our code produces correct results.
+
+_Unit testing_ - when done in the right way - can help, as well as save us development time in the long run
 
 ==
 
@@ -63,17 +65,21 @@ As researchers we need to be able to verify and demonstrate that our code produc
 
 ## Introduction
 
-- Introduction to software testing and unit testing
+<div style="font-size: smaller;">
+
+- Software testing and unit testing
   - An example dataset and application to test for correctness
   - Writing and running tests using the Pytest unit testing framework
   - Using parameterisation to reuse unit tests with different test data
 
-- Introduction to Continuous Integration (CI)
+- Continuous Integration (CI)
   - Using GitHub Actions to automate running of unit tests
   - Build matrices for cross-platform testing using CI
 
 - Debugging issues and improving robustness
   - Using PyCharm's debugger to diagnose and robustly fix a problem
+
+</div>
 
 Note:
 
