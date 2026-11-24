@@ -107,7 +107,7 @@ The PR is again a GitHub specific thing, which creates a place to view the propo
 
 https://github.com/TUDelftGeodesy/sarxarray/pull/67/
 
-==
+===
 
 <!-- .slide: data-state="standard 10" -->
 
@@ -260,3 +260,66 @@ Urls:
   - To use with markdown, include the MyST Parser extension https://www.sphinx-doc.org/en/master/usage/markdown.html#markdown
 
 ===
+
+<!-- .slide: data-state="standard 10" -->
+
+## `pyproject.toml`
+
+Contains metadata for your package
+- Name, authors, description, version number
+- Installation dependencies (`pip install .`)
+- Tool options (ruff, pytest, ...)
+
+===
+
+<!-- .slide: data-state="standard 10" -->
+
+## License
+
+Visible online != permission to use
+
+You(r institution) still has copyright by default.
+
+<div class="fragment" data-fragment-index="2">
+
+Add a license to allow usage.
+- Apache 2.0
+- MIT
+- GPL
+- ... and many more
+
+</div>
+
+===
+
+<!-- .slide: data-state="standard 10" -->
+
+## Citation
+
+You want to be acknowledged for your efforts!
+
+Including a `CITATION.cff` file makes it easy to do so
+
+```
+authors:
+  - family-names: Doe
+    given-names: John
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+title: "Inflam"
+```
+<!-- .element: class="fragment" data-fragment-index="2" -->
+
+===
+
+<!-- .slide: data-state="standard 10" -->
+
+## Packaging
+
+`uv` can use the information in `pyproject.toml` to _build_ your package
+
+The `.whl` file produced can be installed by `pip`
+<!-- .element: class="fragment" data-fragment-index="2" -->
+
+This is what you find on PyPI
+<!-- .element: class="fragment" data-fragment-index="2" -->
