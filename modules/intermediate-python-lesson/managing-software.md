@@ -67,11 +67,13 @@ Estimating the required effort for work items is useful to set priorities
 
 ## Managing a Collaborative Software Project
 
+<div style="font-size: smaller;">
+
 Platforms like GitHub provide tools to manage software
 
 - Manage bug reports, feature requests and future work with _issues_
   - Use labels to categorize issues: "bug", "enhancement", "help wanted", ..
-  - Example ()
+  - [Example](https://github.com/esciencecenter-digital-skills/NEBULA/issues)
 
 - _Notifications & referencing_ make it easy to reference
   - Collaborators with mentions: @f-hafner
@@ -80,11 +82,15 @@ Platforms like GitHub provide tools to manage software
 - Manage software projects with _project boards_
   - Overview of open issues, current work, planned work, etc. Example
 
+</div>
+
 ===
 
 <!-- .slide: data-state="standard 10" -->
 
 ## Assessing Software for Suitability and Improvement
+
+<div style="font-size: smaller;">
 
 - This is about judging other people's software... 
   - "Should we include package X as a dependency in our software?"
@@ -97,11 +103,15 @@ Platforms like GitHub provide tools to manage software
 - Software management plans
   - 10.5281/zenodo.7038280 
 
+</div>
+
 ===
 
 <!-- .slide: data-state="standard 10" -->
 
 ## Software Improvement Through Feedback
+
+<div style="font-size: smaller;">
 
 - Estimate time
   - How much time do we have to resolve requirements (=issues)?
@@ -116,5 +126,7 @@ Platforms like GitHub provide tools to manage software
 - Sprints tie these things together
   - Work on agreed prioritized things for a given period (1w-1mo)
   - This can be a continuous process
+
+</div>
 
 ===
